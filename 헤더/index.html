@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<script type="text/javascript" src="js/html5shiv.min.js" media="all"></script>
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
 <title>EDIYA</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
 					<li><a href="#">고객센터</a></li>
 					<li><a href="#">쇼핑몰</a></li>
 				</ul>
-				<select name="lang" id="lang">
+				<select name="lang" id="lang" title="언어를선택해주세요">
 					<option value="언어선택">LANGUAGE</option>
 					<option value="한국어">KOREAN</option>
 					<option value="영어">ENGLISH</option>
@@ -40,8 +40,10 @@
 				<li><a href="#">EVENT and NEWS</a></li>
 				<li><a href="#">STORE</a></li>
 			</ul>
-			<h3 class="blind">2depth서브메뉴</h3>
-			<ul>
+		</header>
+		<h3 class="blind">2depth서브메뉴</h3>
+		<div class="subMenu_wrap">
+			<ul class="subMenu">
 				<li>
 					<ul>
 						<li><a href="#">회사소개</a></li>
@@ -85,8 +87,281 @@
 					</ul>
 				</li>
 			</ul>
-		</header>
-	</div>
+		</div>
+	</div> 
 <!-- //헤더영역 -->
+<!-- 컨테이너영역 -->
+	<div id="container">
+		<!-- 비쥬얼영역 -->
+		<section id="idx_section_1">
+				<h3 class="blind">메인이미지</h3>
+				<ul class="visual_wrap">
+					<li class="visual_img_1"><a href="#"><img src="images/main/img_visual.png" alt="비쥬얼이미지1"></a></li>
+				</ul>
+				<p>
+					<button class="on">버튼1</button>
+					<button>버튼2</button>
+					<button>버튼3</button>
+					<button>버튼4</button>
+					<button>버튼5</button>
+				</p>
+		</section>
+		<!-- //비쥬얼영역 -->
+		<!-- 신메뉴/매장찾기영역 -->
+		<section id="idx_section_2">
+			<div class="idx_section_2_in clearFix">
+				<div class="newMenu_wrap">
+					<h3><img src="images/main/title_newMenu.png" alt="신메뉴소개"></h3>
+					<ul>
+						<li><a href="#"><img src="images/main/img_newMenu.png" alt="신메뉴이미지1"></a></li>
+					</ul>
+					<p>
+						<button class="on">첫번째이미지보기</button>
+						<button>두번째이미지보기</button>
+					</p>
+				</div>
+				<div class="store_wrap">
+					<h3><img src="images/main/title_f_s.png" alt="매장찾기">
+					<span>
+						<input type="radio" name="s_store" id="all_store" checked=""><label for="all_store">전체매장</label>
+						<input type="radio" name="s_store" id="d_store"><label for="d_store">직영점</label>
+						<input type="radio" name="s_store" id="f_store"><label for="f_store">가맹점</label>
+					</span>
+					</h3>
+					<form action="#" method="get">
+						<fieldset>
+						<legend>매장검색</legend>
+							<p>
+								<input type="text" name="sch_store" id="sch_store" placeholder="찾고자하는 매장명을 입력해주세요" title="찾고자하는 매장명을 입력해주세요"><input type="image" src="images/main/btn_sch.png" alt="매장검색버튼">
+							</p>
+						</fieldset>
+					</form>
+					<div class="open_store">
+						<h4>신규 오픈 매장</h4>
+						<figure>
+						<a href="#"><img src="images/main/img_newStore.png" alt="포천운천점"></a>
+							<figcaption>포천운천점</figcaption>
+						</figure>
+						<p>
+							<button class="on">첫번째이미지보기</button>
+							<button>두번째이미지보기</button>
+							<button>세번째이미지보기</button>
+							<button>네번째이미지보기</button>
+						</p>
+					</div>
+					<div class="quickService">
+						<h4>빠른 서비스</h4>
+						<ul class="clearFix">
+							<li><a href="#">
+									<figure>
+										<img src="images/main/q_s_1.png" alt="로그인">
+										<figcaption>로그인</figcaption>
+									</figure>
+								</a></li>
+							<li><a href="#">
+									<figure>
+										<img src="images/main/q_s_2.png" alt="회원가입">
+										<figcaption>회원가입</figcaption>
+									</figure>
+								</a></li>
+							<li><a href="#">
+									<figure>
+										<img src="images/main/q_s_3.png" alt="상품권확대">
+										<figcaption>상품권확대</figcaption>
+									</figure>
+								</a></li>
+							<li><a href="#">
+									<figure>
+										<img src="images/main/q_s_4.png" alt="가맹점문의">
+										<figcaption>가맹점문의</figcaption>
+									</figure>
+								</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //신메뉴/매장찾기영역 -->
+		<!-- 브랜드소개 외3 영역 -->
+		<section id="idx_section_3">
+			<div class="idx_section_3_in">
+				<ul class="clearFix">
+					<li>
+						<h4>브랜드 소개</h4>
+						<a href="#"><img src="images/main/logo_st3.png" alt="브랜드소개"></a>
+						<p>진심을 담은 커피, 커피한잔의 행복<br/>이디야커피를 소개합니다.</p>
+					</li>
+					<li>
+						<h4>가맹점 개설안내</h4>
+						<a href="#"><img src="images/main/img_frc_sc3.png" alt="가맹점 개설안내"></a>
+						<p>본사가 운영하는 노하우와 매뉴얼을<br/>바탕으로 창업의 꿈을 실현하자!</p>
+					</li>
+					<li>
+						<h4>2016 희망기금</h4>
+						<a href="#"><img src="images/main/img_hope_sc3.png" alt="2016 희망기금"></a>
+						<p>‘이디야 희망기금’은 이디야 커피의 대표적인<br/>사회공헌 사업입니다.</p>
+					</li>
+					<li>
+						<h4>이디야 SNS</h4>
+						<img src="images/main/img_sns_sc3.png" alt="이디야 SNS" usemap="#ediSns" >
+						<map id="ediSns" name="ediSns">
+							<area shape="rect" coords="0,0,73,73" href="https://www.facebook.com/iEDIYA" alt="이디야페이스북">
+							<area shape="rect" coords="79,0,152,73" href="https://www.instagram.com/ediya.coffee/" alt="이디야인스타그램">
+							<area shape="rect" coords="158,0,231,73" href="http://blog.naver.com/ediya-coffee" alt="이디야블로그">
+						</map>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- //브랜드소개 외3 영역 -->
+		<!-- 이디야몰 영역 -->
+		<section id="idx_section_4">
+			<div class="idx_section_4_in clearFix">
+				<div class="mall_wrap clearFix">
+					<h3><img src="images/main/title_mall.png" alt="이디야몰"></h3>
+					<ul>
+						<li>
+							<ul>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_1.png" alt="핸드드립다크블루">
+												<figcaption><p>핸드드립커피 바이올렛 42g </p><strong>5,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_2.png" alt="다크불루">
+												<figcaption><p>이디야 로스트 200g </p><strong>14,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_3.png" alt="핸드드립다크불루">
+												<figcaption><p>이디야 다크블루 42g </p><strong>5,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<p >
+						<button class="on">첫번째이미지보기</button>
+						<button>두번째이미지보기</button>
+						<button>세번째이미지보기</button>
+					</p>
+				</div>
+				<div class="water_spc_wrap">
+					<div class="water_wrap">
+						<h4>이디야워터</h4>
+						<p>맑고 깨끗한 이디야 워터!<br/>매장에서 만나보세요</p>
+						<p><a href="#"><img src="images/main/more_water.png" alt="이디야워터바로가기"></a></p>
+					</div>
+					<div class="specialy_wrap">
+						<h4>가장 특별한 연구소</h4>
+						<p>더 좋은 커피를 향한 혼신의 노력,<br/>오직 커피만을 향한<br/>이디야의 열정</p>
+						<p><a href="#"><img src="images/main/more_specialy.png" alt="이디야워터바로가기"></a></p>
+					</div>
+				</div>
+				 <div class="news_wrap">
+				 	<h3><img src="images/main/title_news.png" alt="공지사항"></h3>
+				 	<ul>
+				 		<li><a href="#"><span>이디야, 겨울한정메뉴 ‘피칸 초콜릿','티라미수 라떼' 판매</span><br/>대한민국 대표 커피브랜드 이디야커피에서 겨울한정메뉴로 피칸초콜릿과 티라메수 라떼를 선보입니다.</a></li>
+				 		<li><a href="#">[이디야커피] 신한카드와 MOU 체결</a></li>
+				 		<li><a href="#">[이디야커피] 종로학원하늘교육과 MOU 체결</a></li>
+				 		<li><a href="#">[이디야커피] 가맹점 수 최다, 압도적1위(한국공정거래조정원 관련기사)</a></li>
+				 		<li><a href="#">[이디야커피] 디저트 신메뉴 2종 ‘에끌레어''페스트리 슈'출시</a></li>
+				 		<li><a href="#">[이디야커피] 2000호점 돌파!</a></li>
+				 	</ul>
+				 	<p class="news_more"><img src="images/main/more_news.png" alt="공지사항더보기"></p>
+				 </div>
+			</div>
+		</section>
+		<!-- //이디야몰 영역 -->
+	</div>
+<!-- //컨테이너영역 -->
+<!-- 퀵 영역 -->
+	<div id="quick_wrap">
+		<div class="quick_wrap_in">
+			<ul class="clearFix">
+				<li>
+					<dl>
+						<dt>EDIYA COFFEE</dt>
+						<dd><a href="#">회사 소개</a></dd>
+						<dd><a href="#">CEO 인사말</a></dd>
+						<dd><a href="#">사회 공헌</a></dd>
+						<dd><a href="#">찾아오시는 길</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>EDIYA LAB</dt>
+						<dd><a href="#">EDIYA LAB 소개</a></dd>
+						<dd><a href="#">EDIYA LAB 시설</a></dd>
+						<dd><a href="#">EDIYA LAB 메뉴</a></dd>
+						<dd><a href="#">EDIYA LAB 원두</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>PRODUCT</dt>
+						<dd><a href="#">메뉴</a></dd>
+						<dd><a href="#">MD 제품</a></dd>
+						<dd><a href="#">이디야세트</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>FRANCHISE</dt>
+						<dd><a href="#">가맹안내</a></dd>
+						<dd><a href="#">인테리어</a></dd>
+						<dd><a href="#">커피아카데미</a></dd>
+						<dd><a href="#">FAQ</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>EVENT &#38; NEWS</dt>
+						<dd><a href="#">이디야소식</a></dd>
+						<dd><a href="#">이벤트</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>STORE</dt>
+						<dd><a href="#">매장찾기</a></dd>
+						<dd><a href="#">이디야 쇼핑몰</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!-- //퀵 영역 -->
+<!-- 푸터 영역 -->
+<div id="footer_wrap">
+	<footer id="footer">
+		<ul class="clearFix">
+			<li><a href="#">채용안내</a></li>
+			<li><a href="#">제휴/제안</a></li>
+			<li><a href="#">모바일쿠폰 B2B 구매</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">개인정보 처리방침</a></li>
+			<li><a href="#">이메일수집거부</a></li>
+			<li><a href="#">사이트맵</a></li>
+			<li><a href="#">점주의방</a></li>
+		</ul>
+		<div>
+			<address>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)    TEL : 02-543-6467     FAX : 02-543-7191</address>
+			<p>사업자등록번호 : 107-86-16302     통신판매업 신고 : 강남 제 002519호     대표이사 : 문창기</p>
+		</div>
+		<p><a href="#"><img src="images/common/btn_top.png" alt="탑버튼"></a></p>
+	</footer>
+</div>
+<!-- //푸터 영역 -->
+</div>
 </body>
 </html>
