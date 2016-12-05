@@ -4,18 +4,19 @@
 /*reset*/
 *{margin: 0; padding: 0;box-sizing: border-box;}
 html{height: 100%; overflow-y: scroll;}
-li,dl,dt,dd{list-style: none}
+li,dl,dt,dd,ol{list-style: none}
 img,input[type=image]{border:none; vertical-align: middle;}
 body{font: 14px/1.3 Nanum Gothic,'나눔고딕',Malgun Gothic,'맑은고딕',sans-serif;color: #333;height: 100%;}
-h1,h2,h3,h4,h5{font-size: 100%;font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
 .blind,legend{position: absolute;left: -9999px;}
 fieldset,select{border: none}
-a{text-decoration: none;color: #333;}
+a,a:hover,a:focus{text-decoration: none;color: #333;}
 input,select{border-collapse: collapse;}
 .clearFix:after{content: "";display: block;clear: both;}
-.claerFix{*zomm:1;}
+.claerFix{*zoom:1;}
 button,input[type=image],select{cursor: pointer;}
 button{border: none;text-indent: -9999px;}
+address, em{font-style: normal;}
 
 /*헤더*/
 #wrap,#idx_section_1,#idx_section_2,#idx_section_3,#idx_section_4{width: 100%;}
@@ -46,16 +47,3 @@ button{border: none;text-indent: -9999px;}
 .header .gnb li a:hover{background-position: 0 bottom;}
 .header h3+ul{display: none;}
 /*헤더종료*/
-
-
-
-
-
-
-
-
-
-
-
-
-
