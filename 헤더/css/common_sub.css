@@ -1,0 +1,32 @@
+@charset "utf-8";
+#visual{position:relative;color:#fff;text-align:center;background:url("../images/info/title_info_bg.jpg") center 0 no-repeat;}
+#visual img{max-width:1200px;width:100%;}
+#visual span{position:absolute;top:37%;left:0;width:100%;height:35px;font-size:24px;line-height:40px;font-weight:bold;background:url("../images/common/sub_title_bar.jpg") center 0 no-repeat;}
+#visual h2{position:absolute;top:60%;left:0;width:100%;font-size:40px;font-weight:900;}
+#contents_wrap{max-width:1200px;margin:0 auto;}
+.link_loute{height:60px;text-align:right;font-size:12px;line-height:60px;}
+.link_loute a{color:#989898;}
+.home_img{background:url("../images/common/home_link.jpg") 0 2px no-repeat;padding-left:15px;}
+
+.lnb{height:60px;}
+.lnb ul{overflow:hidden;text-align:center;}
+.lnb li{float:left;font-size:24px;line-height:60px;border:1px solid #d6d6d6;background:#f9f9f9;}
+.lnb li a{display:block;}
+.lnb li.on,.lnb li:hover,.lnb li:focus{background:#13245E;font-weight:bold;}
+.lnb li.on a,.lnb li a:hover,.lnb li a:focus{color:#fff;}
+.lnb_4 li{width:25%;display:none;}
+.lnb_3 li{width:33.33%;display:none;}
+.lnb_2 li{width:50%;}
+
+#contents_wrap h3{height:143px;text-align:center;background:url("../images/common/lnb_sub_title_bg.jpg") repeat-x;}
+#contents_wrap h3 span{line-height:143px;font-size:40px;font-weight:900;background:#fff;padding:10px;}
+.lnb_sub_wrap{position:relative;background:url("../images/common/lnb_sub_bar.png") repeat-x;}
+.lnb_sub_wrap article h4{position:absolute;top:0;left:0;width:228px;height:49px;font-size:24px;line-height:50px;text-align:center;border:1px solid #d6d6d6;border-bottom:none;background:#f9f9f9;}
+.lnb_sub_wrap article h4 a{display:block;color:#777;}
+.lnb_sub_wrap article h4.on,.lnb_sub_wrap article h4:hover,.lnb_sub_wrap article h4:focus{height:50px;font-weight:bold;background:#fff;border-color:#13245e;}
+.lnb_sub_wrap article h4.on a,.lnb_sub_wrap article h4 a:hover,.lnb_sub_wrap article h4 a:focus{color:#13245e;}
+.lnb_sub_wrap article div{padding-top:50px;}
+.lnb_sub_wrap .lnb_sub_menu_2{left:228px;}
+.lnb_sub_wrap .lnb_sub_menu_3{left:456px;}
+.lnb_sub_wrap .lnb_sub_menu_4{left:684px;}
+.lnb_sub_wrap .lnb_sub_menu_2+div,.lnb_sub_wrap .lnb_sub_menu_3+div,.lnb_sub_wrap .lnb_sub_menu_4+div{display:none;}
