@@ -1,0 +1,198 @@
+@charset "UTF-8";
+#visual {background:url("../images/store/store_top_back_02.png") center 0 no-repeat;}
+.w1200ma{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  .map_wrap{
+    margin-bottom: 60px;
+    width: 100%;
+    height: 510px;
+    border: 1px solid #cccccc;
+    border-top: 1px solid #13245e;
+    position: relative;
+    .map{
+      display: inline-block;
+      a{
+        display: block;
+      margin-top: 40px;
+      margin-left: 100px;
+     }
+    }
+    .store_form{
+      #store_search{
+        text-indent: -9999px;
+        border: none;
+        +label{
+          a{
+            margin: 0 auto;
+            display: block;
+            width: 169px;
+            height: 50px;
+            border: 1px solid #cccccc;
+            background: #13245e;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            img{
+              margin-right: 15px;
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+      position: absolute;
+      top: 80px ;
+      right: 150px;
+      li{
+       width: 600px;
+       height: 100px;
+       border-bottom: 1px dotted #cccccc;
+       span{
+       margin-left: 15px;
+       margin-right: 45px;
+       display: inline-block;
+       color: #13245e;
+       font-weight: 900;
+       font-size: 15px;
+       }
+      }
+      .store_positon_1{
+        margin-bottom: 15px;
+        select{
+          margin-right: 9px;
+          width: 90px;
+          height: 28px;
+          border: 1px solid #cccccc;
+          color: #707070;
+          vertical-align: middle;
+        }
+        input{
+          width: 254px;
+          height: 28px;
+          border: 1px solid #cccccc;
+        }
+      }
+      .store_positon_2{
+        margin-left: 120px;
+        label{
+          margin-right: 25px;
+        }
+      }
+      .store_t_1{
+        margin-top: 20px;
+        margin-bottom: 25px;
+        input{
+          margin-right: 20px;
+        }
+        #store_tema_2{
+          margin-left: 140px;
+        }
+        label{
+          +input+label{
+            background: url(../images/store/img_store_icon3_mini.png) 0 1px no-repeat;
+          }
+          line-height: 25px;
+          padding: 5px 0 5px 35px;
+          height: 25px;
+          width: 25px;
+          background: url(../images/store/img_store_icon1_mini.png) 0 1px no-repeat;
+        }
+      }
+      .store_t_2{
+        margin-left: 120px;
+        input{
+          margin-right: 20px;
+        }
+        #store_tema_4{
+          margin-left: 140px;
+        }
+        label{
+          +input+label{
+            background: url(../images/store/img_store_icon4_mini.png) 0 1px no-repeat;
+          }
+          line-height: 25px;
+          padding: 5px 0 5px 35px;
+          height: 25px;
+          width: 25px;
+          background: url(../images/store/img_store_icon2_mini.png) 0 1px no-repeat;
+        }
+      }
+      .store_class{
+        margin-top: 15px;
+        input{
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        label{
+          +input+label{
+            background: url(../images/store/icon_class_b.gif) 0 0 no-repeat;
+            +input+label{
+                background: url(../images/store/icon_class_c.gif) 0 0 no-repeat;
+            }
+          }
+          margin-right: 25px;
+          padding: 7px 0 7px 35px;
+          background: url(../images/store/icon_class_a.gif) 0 0 no-repeat;
+        }
+      }
+    }
+  }
+  .search_tit{
+    padding-left: 30px;
+    color: #13245e;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #13245e;
+    background: url(../images/store/store_icon_circle.png) 0 2px no-repeat;
+    strong{
+      color: #ff0000;
+    }
+  }
+  .search_list{
+    .on_off{
+      position: absolute;
+      top: 40px;
+      right: 200px;
+      width: 220px;
+      height: 50px;
+      li{
+        background: none;
+        float: left;
+        border: none;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+      }
+    }
+    li{
+      a{
+        position: absolute;
+        top: 50px;
+        right: 60px;
+
+      }
+      p:first-child{
+        +p{
+          color: #707070;
+          margin-left: 150px;
+        }
+        display: inline-block;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        padding-right: 70px;
+        margin: 35px 0 10px 150px;
+        background: url(../images/store/store_mark.png) right 0 no-repeat;
+      }
+      width: 100%;
+      height: 130px;
+      border-bottom: 1px solid #cccccc;
+      position: relative;
+      background: url(../images/store/store_logo.png) 25px 15px no-repeat;
+    }
+  }
+}
