@@ -1,1 +1,31 @@
-#visual{background:url("../images/ediya_coffee/store_top_back_02.png") center 0 no-repeat}.w1200ma p{text-align:center;padding-top:100px;padding-bottom:65px}.w1200ma .list_wrap{width:1200px;margin:0 auto}.w1200ma .list_wrap dl{padding-left:335px;padding-bottom:85px;background:url(../images/ediya_coffee/ediya_coffee_list_1.png) 0 0 no-repeat}.w1200ma .list_wrap dl+dl{background:url(../images/ediya_coffee/ediya_coffee_list_2.png) 0 0 no-repeat}.w1200ma .list_wrap dl+dl+dl{background:url(../images/ediya_coffee/ediya_coffee_list_3.png) 0 0 no-repeat}.w1200ma .list_wrap dl+dl+dl+dl{background:url(../images/ediya_coffee/ediya_coffee_list_4.png) 0 0 no-repeat}.w1200ma .list_wrap dl+dl+dl+dl+dl{background:url(../images/ediya_coffee/ediya_coffee_list_5.png) 0 0 no-repeat}.w1200ma .list_wrap dt{color:#13245e;font-size:24px;font-weight:bold;padding:30px 0}.w1200ma .list_wrap dd{color:#333;font-size:18px}
+#visual {
+  background: url("../images/ediya_coffee/store_top_back_02.png") center 0 no-repeat; }
+
+.w1200ma p {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 65px; }
+
+.w1200ma .list_wrap {
+  width: 1200px;
+  margin: 0 auto; }
+  .w1200ma .list_wrap dl {
+    padding-left: 335px;
+    padding-bottom: 85px;
+    background: url(../images/ediya_coffee/ediya_coffee_list_1.png) 0 0 no-repeat; }
+    .w1200ma .list_wrap dl + dl {
+      background: url(../images/ediya_coffee/ediya_coffee_list_2.png) 0 0 no-repeat; }
+      .w1200ma .list_wrap dl + dl + dl {
+        background: url(../images/ediya_coffee/ediya_coffee_list_3.png) 0 0 no-repeat; }
+        .w1200ma .list_wrap dl + dl + dl + dl {
+          background: url(../images/ediya_coffee/ediya_coffee_list_4.png) 0 0 no-repeat; }
+          .w1200ma .list_wrap dl + dl + dl + dl + dl {
+            background: url(../images/ediya_coffee/ediya_coffee_list_5.png) 0 0 no-repeat; }
+  .w1200ma .list_wrap dt {
+    color: #13245e;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 0; }
+  .w1200ma .list_wrap dd {
+    color: #333333;
+    font-size: 18px; }

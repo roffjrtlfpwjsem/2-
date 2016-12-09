@@ -1,1 +1,13 @@
-#container{padding-bottom:0}#visual{background:url("../images/ediya_coffee_product/ediya_coffee_product_top_back_02.png") center 0 no-repeat}.lnb_3 li{display:block}.w1200ma{text-align:center;padding-top:100px;padding-bottom:100px}
+#container {
+  padding-bottom: 0; }
+
+#visual {
+  background: url("../images/ediya_coffee_product/title_product_bg.jpg") center 0 no-repeat; }
+
+.lnb_3 li {
+  display: block; }
+
+.w1200ma {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px; }

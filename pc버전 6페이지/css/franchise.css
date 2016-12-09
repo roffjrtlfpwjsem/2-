@@ -1,1 +1,62 @@
-#container{padding-bottom:0}#visual{background:url("../images/franchise/fran_top_back_02.png") center 0 no-repeat}.lnb_3 li{display:block}.w1200ma{width:1200px;margin:0 auto;padding-top:100px}.w1200ma h2{font-size:30px;font-weight:bold;color:#333;text-align:center;margin-bottom:40px}.w1200ma h2+p{font-size:24px;text-align:center;color:#13245e;margin-bottom:25px}.w1200ma h2+p+p{font-size:20px;color:#7a7a7a;text-align:center;margin-bottom:25px}.w1200ma h2+p+p+p{text-align:center;margin-bottom:70px}.w1200ma h2+p+p+p+p{text-align:center;font-size:24px;color:#333;font-weight:bold;margin-bottom:30px}.w1200ma h2+p+p+p+p+p{text-align:center;margin-bottom:40px}.w1200ma h2+p+p+p+p+p+p{text-align:center;color:#333;font-size:24px;font-weight:bold;margin-bottom:100px}.w1200ma ul li{padding-top:105px;position:relative;margin-bottom:90px;height:155px;width:50%;float:left;text-align:center;font-size:24px;color:#13245e;font-weight:bold}.w1200ma ul li img{position:absolute;top:0;left:45%}
+#container {
+  padding-bottom: 0; }
+
+#visual {
+  background: url("../images/franchise/fran_top_back_02.png") center 0 no-repeat; }
+
+.lnb_3 li {
+  display: block; }
+
+.w1200ma {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px; }
+  .w1200ma h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 40px; }
+    .w1200ma h2 + p {
+      font-size: 24px;
+      text-align: center;
+      color: #13245e;
+      margin-bottom: 25px; }
+      .w1200ma h2 + p + p {
+        font-size: 20px;
+        color: #7a7a7a;
+        text-align: center;
+        margin-bottom: 25px; }
+        .w1200ma h2 + p + p + p {
+          text-align: center;
+          margin-bottom: 70px; }
+          .w1200ma h2 + p + p + p + p {
+            text-align: center;
+            font-size: 24px;
+            color: #333333;
+            font-weight: bold;
+            margin-bottom: 30px; }
+            .w1200ma h2 + p + p + p + p + p {
+              text-align: center;
+              margin-bottom: 40px; }
+              .w1200ma h2 + p + p + p + p + p + p {
+                text-align: center;
+                color: #333333;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 100px; }
+  .w1200ma ul li {
+    padding-top: 105px;
+    position: relative;
+    margin-bottom: 90px;
+    height: 155px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    color: #13245e;
+    font-weight: bold; }
+    .w1200ma ul li img {
+      position: absolute;
+      top: 0;
+      left: 45%; }
