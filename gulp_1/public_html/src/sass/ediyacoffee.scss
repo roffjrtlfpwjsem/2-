@@ -1,14 +1,10 @@
 @charset "UTF-8";
 #visual {background:url("../images/ediyacoffee/ediyacoffee_title_bg.jpg") center 0 no-repeat;}
-.w1200ma{
-p{
+.main_visual{
   text-align: center;
-  padding-top: 100px;
   padding-bottom: 65px;
 }
 .list_wrap{
-  width: 1200px;
-  margin: 0 auto;
   dl{
 		padding:0 150px 85px 335px;
     background: url(../images/ediyacoffee/ediyacoffee_list_1.png) 0 0 no-repeat;
@@ -34,8 +30,7 @@ p{
   dd{
 		line-height:25px;
 		text-align:justify;
-    color: #333333;
+    color: #333;
     font-size: 18px;
   }
-}
 }

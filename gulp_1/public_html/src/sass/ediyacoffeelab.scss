@@ -3,30 +3,67 @@
   padding-bottom: 0;
 }
 #visual {background:url("../images/ediyacoffeelab/ediyacoffeelab_title_bg.jpg") center 0 no-repeat;}
-.w1200ma{
-  padding-top: 80px;
-  width: 1200px;
-  margin: 0 auto;
-  .lab_tit{
-    padding-left: 20px;
-    margin-left: 50px;
-    color: #333333;
-    font-size: 18px;
-    font-weight: bold;
-    height: 30px;
-    line-height: 30px;
-    background: url(../images/common/bullet_sub_tit.png) 0 0 no-repeat;
-  }
-  .pl50{
-    color: #13245e;
-    font-size: 24px;
-    font-weight: bold;
-		padding:0 50px 50px;
-    span{
-      display: block;
-      margin-top: 15px;
-      color: #333333;
-      font-size: 18px;
-    }
-  }
+.main_visual_wrap{position:relative;color:#fff;
+	h4{
+		position:absolute;
+		top:30px;
+		left:30px;
+		font-size:24px;
+		font-weight:bold;
+	}
+	p{
+		position:absolute;
+		top:110px;
+		left:30px;
+		font-size:18px;
+		font-weight:bold;
+		line-height:28px;
+	}
 }
+.lab_list{
+	margin-top:50px;
+	overflow:hidden;
+	li{
+		position:relative;
+		float:left;
+		width:33.33%;
+		padding-left:30px;
+		font-size:18px;
+		color:#13245e;
+		font-weight:bold;
+		img{
+			width:100%;
+			max-width:172px;	
+		}
+		span{
+			position:absolute;
+			top:40%;
+			left:135px;
+			width:42%;
+		}
+	}
+}
+.lab_tit{
+	padding-left: 20px;
+	margin-left: 50px;
+	color: #333333;
+	font-size: 18px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	background: url(../images/common/bullet_sub_tit.png) 0 0 no-repeat;
+}
+.pl50{
+	color: #13245e;
+	font-size: 24px;
+	font-weight: bold;
+	padding:50px;
+	span{
+		display: block;
+		margin-top: 15px;
+		color: #333333;
+		font-size: 18px;
+		font-weight:normal;
+	}
+}
+
