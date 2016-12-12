@@ -124,8 +124,10 @@ form{
 }
 .news_form{
   a{
-    &:hover{
+    &:hover, &:focus{
       color: #fff;
+      background: #13245e;
+      border: 1px solid #cccccc;
     }
   }
   select{
