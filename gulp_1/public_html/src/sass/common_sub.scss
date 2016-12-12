@@ -10,10 +10,9 @@
 
 .lnb{height:60px;}
 .lnb ul{overflow:hidden;text-align:center;}
-.lnb li{float:left;font-size:24px;line-height:60px;border:1px solid #d6d6d6;background:#f9f9f9;}
-.lnb li a{display:block;}
-.lnb li.on,.lnb li:hover,.lnb li:focus{background:#13245E;font-weight:bold;}
-.lnb li.on a,.lnb li a:hover,.lnb li a:focus{color:#fff;}
+.lnb li{float:left;font-size:24px;line-height:60px;}
+.lnb li a{display:block;background:#f9f9f9;border:1px solid #d6d6d6;}
+.lnb li .on,.lnb li a:hover,.lnb li a:focus{color:#fff;background:#13245E;border:1px solid #13245E;font-weight:bold;}
 .lnb_4 li{width:25%;display:none;}
 .lnb_3 li{width:33.33%;display:none;}
 .lnb_2 li{width:50%;}
