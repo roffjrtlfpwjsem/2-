@@ -1,0 +1,211 @@
+@charset "UTF-8";
+#container{
+  padding-bottom: 0;
+}
+#visual {background:url("../images/franchise/fran_top_back_02.png") center 0 no-repeat;}
+.lnb_3 li{
+  display: block;
+}
+.faq_wrap{
+  padding: 0 40px;
+  h2{
+    line-height: 22px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: #13245e;
+    font-weight: bold;
+    padding-bottom: 20px;
+    background: url(../images/faq/store_icon_circle.png) 0 0 no-repeat;
+  }
+  table{
+    .w180{
+      width: 180px;
+    }
+    margin-bottom: 100px;
+    border-collapse: collapse;
+    width: 100%;
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    thead{
+      tr{
+        th{
+          padding: 25px 0;
+        }
+        border-top:1px solid #13245e;
+        border-bottom:1px solid #cccccc;
+      }
+    }
+    tbody{
+      td{
+        padding: 25px 0;
+        border-bottom:1px solid #cccccc;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        a{
+          margin-left: 80px;
+          &:hover{
+            color: #13245e;
+          }
+        }
+        +td{
+          text-align: left;
+        }
+      }
+    }
+  }
+  .form_title{
+    border-bottom: 1px solid #13245e;
+     span{
+       font-weight: normal;
+       color: #333333;
+       font-size: 14px;
+       strong{
+         color: red;
+       }
+     }
+  }
+  .faq_form{
+    ul{
+      li{
+        color: #707070;
+        border-bottom: 1px solid #cccccc;
+        #faq_1{
+          width: 198px;
+          height: 28px;
+          border: 1px solid #cccccc;
+          color: #707070;
+        }
+        #faq_2{
+          line-height: 28px;
+          width: 148px;
+          height: 28px;
+          border: 1px solid #cccccc;
+        }
+        #faq_3{
+          +input{
+            vertical-align: middle;
+            line-height: 28px;
+            width: 148px;
+            height: 28px;
+            border: 1px solid #cccccc;
+            +select{
+              color: #707070;
+              margin-left: 5px;
+              vertical-align: middle;
+              width: 198px;
+              height: 28px;
+              border: 1px solid #cccccc;
+            }
+          }
+          line-height: 28px;
+          width: 148px;
+          height: 28px;
+          border: 1px solid #cccccc;
+        }
+        #faq_4{
+          +input{
+            line-height: 28px;
+            width: 48px;
+            height: 28px;
+            border: 1px solid #cccccc;
+            +input{
+              line-height: 28px;
+              width: 48px;
+              height: 28px;
+              border: 1px solid #cccccc;
+            }
+          }
+          width: 48px;
+          height: 28px;
+          border: 1px solid #cccccc;
+          line-height: 28px;
+        }
+        #faq_5{
+          +input{
+            line-height: 28px;
+            width: 48px;
+            height: 28px;
+            border: 1px solid #cccccc;
+            +input{
+              line-height: 28px;
+              width: 48px;
+              height: 28px;
+              border: 1px solid #cccccc;
+            }
+          }
+          width: 48px;
+          height: 28px;
+          border: 1px solid #cccccc;
+          line-height: 28px;
+        }
+        #faq_6{
+          line-height: 28px;
+          width: 698px;
+          height: 28px;
+          border: 1px solid #cccccc;
+        }
+        #faq_7{
+          line-height: 28px;
+          width: 198px;
+          height: 28px;
+          border: 1px solid #cccccc;
+        }
+        #faq_8{
+          line-height: 28px;
+          width: 930px;
+          height: 28px;
+          border: 1px solid #cccccc;
+        }
+        #faq_9{
+            line-height: 258px;
+            width: 928px;
+            height: 258px;
+            border: 1px solid #cccccc;
+        }
+      }
+    }
+    .form_submit{
+      padding-bottom: 100px;
+      width: 175px;
+      margin: 0 auto;
+      padding-top: 35px;
+      #faq_submit{
+        background: url(../images/faq/faq_submit.png) 0 0 no-repeat;
+        text-indent: -9999px;
+        width: 85px;
+        height: 38px;
+        border: none;
+        cursor: pointer;
+      }
+      #faq_reset{
+        background: url(../images/faq/faq_reset.png) 0 0 no-repeat;
+        text-indent: -9999px;
+        width: 85px;
+        height: 36px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    .textarea_label{
+      height: 330px;
+      line-height: 330px;
+    }
+    label{
+      margin-right: 30px;
+      line-height: 50px;
+      text-align: center;
+      display: inline-block;
+      color: #333333;
+      font-weight:900;
+      font-size: 18px;
+      width: 150px;
+      height: 50px;
+      background: #f2f2f2;
+      strong{
+        color: red;
+      }
+    }
+  }
+}

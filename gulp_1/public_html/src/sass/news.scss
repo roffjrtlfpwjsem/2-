@@ -122,3 +122,13 @@ form{
 		}
 	}
 }
+.news_form{
+  a{
+    &:hover{
+      color: #fff;
+    }
+  }
+  select{
+   margin-right: 5px;
+  }
+}
