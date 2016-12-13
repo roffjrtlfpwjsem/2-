@@ -3,4 +3,40 @@
 .map_wrap{
 	width: 1200px;
 	text-align: center;
+	padding-bottom: 60px;
+}
+.addr_wrap_fs{
+	width: 96%;
+	h4{
+		padding:0 0 28px 21px;
+	}
+	dl{
+		border-bottom: 1px solid #dfdfdf;
+		dt,dd{
+			float: left;
+			padding: 23px 0;
+		}
+		dt{
+			font-size: 16px;
+			font-weight: 800;
+			padding: 23px 30px 23px 60px;
+			background: url("../images/findStore/icon_addr.png") 15px center no-repeat;
+		}
+	}
+	.abbr_fs{
+		border-top: 1px solid #000;
+	}
+	.ph_fs{
+		dt{
+			background-image: url("../images/findStore/icon_phone.png");
+		}
+		span{
+			margin-left: 21px;
+		}
+	}
+	.bus_fs{
+		dt{
+			background-image: url("../images/findStore/icon_bus.png");
+		}
+	}
 }
