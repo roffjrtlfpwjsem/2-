@@ -111,4 +111,108 @@ background: url("../images/login/bg_login_v2.png") center 0 no-repeat;
 }
 /*//LOGIN*/
 /*join*/
+.step_join{
+    width: 95%;
+    margin: 0 auto 86px;
+    li{
+        float: left;
+        position: relative;
+        padding-left: 40px;
+        &:after{
+            content:url("../images/join/arrow_join.png");
+            display: inline-block;
+            width: 40px;
+            height: 46px;
+            position: absolute;
+            top: 9px;
+            left: 265px;
+        }
+        &:first-child{
+            padding: 0;
+        }
+        &:first-child+li{
+            &:after{
+                left:305px;
+            }
+        }
+        &:first-child+li+li{
+            &:after{
+                left:305px;
+            }
+        }
+        &:first-child+li+li+li{
+            &:after{
+                content:none;
+            }
+        }
+    }
+}
+.join_wrap{
+    width: 95%;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    border-top: 1px solid #000;
+    margin: 0 auto;
+    padding: 60px 139px 40px 180px;
+    position: relative;
+    background: url("../images/login/c_line_login.png") center center no-repeat;
+    h4{
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 25px;
+        }
+    p.btn_sign{
+        padding-top: 10px;
+    }
+    .ph_sign_wrap{
+        float: left;
+        width: 219px;
+        height: 234px;
+        text-align: center;
+        img{
+            margin-bottom: 25px;
+        }
+    }
+    .ip_sign_wrap{
+        padding-top: 10px;
+        float: right;
+        width: 320px;
+        height: 234px;
+        text-align: center;
+        img{
+            margin-bottom: 36px;
+        }
+    }
+    p.bntPrev_join{
+        width: 100%;
+        position: absolute;
+        top: 390px;
+        left: 0;
+        text-align: center;
+    }
+}
+.commend_join{
+    padding: 8px 0 176px 38px;
+}
+.sign_wrap_jo{
+    margin: 0 auto 140px;
+    border: 1px solid #d6d6d6;
+    width: 95%;
+    padding: 52px 200px 44px 225px;
+    background: url("../images/join/img_sign.png") 84px 65px no-repeat;
+    h4{
+        margin-bottom: 20px;
+    }
+    p{
+        line-height: 22px;
+        >strong{
+            font-weight: 800;
+            font-size: 16px;
+        }
+    }
+}
+.mb_10{
+    margin-bottom: 10px;
+}
 /*//join*/
