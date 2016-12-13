@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<script type="text/javascript" src="js/html5shiv.min.js"></script>
 	<script type="text/javascript" src="js/eventadd.js"></script>
-	<title>EDIYA 로그인</title>
+	<title>EDIYA 회원가입</title>
 </head>
 <body>
 	<div id="wrap">
@@ -98,8 +98,8 @@
 			<!-- 비주얼 영역 -->
 			<div id="visual">
 				<img src="images/login/bg_login_v1.png" alt="로그인비주얼이미지" />
-				<span>로그인</span>
-				<h2>LOGIN</h2>
+				<span>회원가입</span>
+				<h2>MEMBER</h2>
 			</div>
 			<!-- //비주얼 영역 -->
 			<!-- 메인 컨텐츠 영역 -->
@@ -107,24 +107,15 @@
 				<p class="link_loute">
 					<span class="home_img"><a href="index.html">HOME</a></span>
 					&gt;
-					<span><strong>로그인</strong></span>
+					<span><a href="#">회원가입</a></span>
+					&gt;
+					<span><strong>본인인증</strong></span>
 				</p>
-				<h3><span>로그인</span></h3>
+				<h3><span>회원가입</span></h3>
 				<!-- //메인 컨텐츠 영역 -->
 				<form action="#" method="post" class="login_wrap clearFix">
-					<fieldset>
-					<legend>이디야로그인</legend>
-						<div class="login_wrap_in1">
-							<p>이디야 서비스 이용을 위해 로그인을 해주세요.</p>
-							<p class="pb_5"><input type="text" name="user_id" id="user_id" placeholder="이메일아이디입력" title="이메일아이디를 입력해주세요"></p>
-							<p class="pb_5"><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호입력" title="비밀번호를 입력해주세요"></p>
-							<p class="login_btn"><a href="#"><img src="images/login/btn_login.png" alt="로그인버튼"></a></p>
-							<p class="q_join_wrap">
-								<input type="checkbox" name="save_id" id="save_id"><label for="save_id">아이디저장</label>
-								<span>아직 회원이 아니신가요?</span>
-								<a href="join.html"><img src="images/login/btn_join.png" alt="회원가입버튼"></a>
-							</p>
-						</div>
+					<fieldset class="blind">이디야로그인</fieldset>
+
 					<div class="login_wrap_in2">
 						<div class="findId">
 							<h4>아이디를 잊으셨나요?</h4>
@@ -137,7 +128,6 @@
 							<a href="#"><img src="images/login/btn_findPW.png" alt="비밀번호찾기"></a>
 						</div>
 					</div>
-					</fieldset>
 				</form>
 				<div class="cv_wrap_log">
 					<h4><img src="images/login/title_gift.png" alt="이디야회원에게 드리는 특별한 혜택!"></h4>
