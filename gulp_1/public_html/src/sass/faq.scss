@@ -45,7 +45,7 @@
         text-align: center;
         a{
           margin-left: 80px;
-          &:hover{
+          &:hover, &:focus{
             color: #13245e;
           }
         }

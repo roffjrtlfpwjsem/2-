@@ -29,7 +29,7 @@ table{
 				color: #ec6506;
 			a{
 				color: #ec6506;
-				&:hover{
+				&:hover, &:focus{
 					color: #13245e;
 				}
 			}
@@ -42,7 +42,7 @@ table{
 			height: 50px;
 			td{
 				+td{
-					a:hover{
+					a:hover, a:focus{
 						color: #13245e;
 					}
 					padding-left: 80px;
