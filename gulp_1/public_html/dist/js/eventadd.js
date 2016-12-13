@@ -1,0 +1,1 @@
+function addEvent(t,n,e){for(var d=n.split(" "),a=0;a<d.length;a++)document.addEventListener?t.addEventListener(d[a],e):t.attachEvent("on"+d[a],e)}

@@ -1,7 +1,11 @@
 @charset "UTF-8";
 #visual {background:url("../images/event/event_top_back_02.png") center 0 no-repeat;}
 .main_contents{
+	padding: 0 10px;
 	h4{
+		line-height: 20px;
+		padding-left: 30px;
+		background: url(../images/event/store_icon_circle.png) 0 0 no-repeat;
 		font-size: 20px;
 		font-weight: bold;
 		color: #13245e;
