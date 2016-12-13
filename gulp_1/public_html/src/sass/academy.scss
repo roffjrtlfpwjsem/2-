@@ -6,3 +6,82 @@
 .lnb_3 li{
   display: block;
 }
+.academy_top{
+  margin-bottom: 50px;
+ dl{
+   height: 400px;
+   background: url(../images/academy/academy_main.png) 0 0 no-repeat;
+   padding-left: 462px;
+   margin-left: 50px;
+   padding-right: 50px;
+   dt{
+     padding-top: 35px;
+     font-size: 20px;
+     font-weight: 900;
+     color: #333;
+     padding-left: 120px;
+     span{
+       color: #13245e;
+     }
+   }
+   dd{
+     font-size: 18px;
+     font-weight: 900;
+     color: #333;
+     padding-top: 35px;
+     text-align: justify;
+     padding-left: 120px;
+     +dd{
+       font-size: 14px;
+     }
+   }
+ }
+}
+.academy_table{
+  margin-bottom: 100px;
+  padding: 0 40px;
+  h2{
+    padding-bottom: 20px;
+    line-height: 20px;
+    padding-left: 30px;
+    background: url(../images/academy/store_icon_circle.png) 0 0 no-repeat;
+    color: #13245e;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  table{
+    border-collapse: collapse;
+    thead{
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      border-top: 1px solid #13245e;
+      border-bottom: 1px solid #cccccc;
+      th{
+        border-right: 1px solid #cccccc;
+        background: #f2f2f2;
+        height: 50px;
+        +th{
+          border: none;
+        }
+      }
+    }
+    tbody{
+      td{
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        height: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        padding: 0 25px;
+        +td{
+          border-right: none;
+          font-weight: normal;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
