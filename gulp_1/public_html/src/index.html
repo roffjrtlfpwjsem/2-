@@ -3,8 +3,14 @@
 <script type="text/javascript">
 	var init = function(){
 		var pageA =  document.querySelectorAll(".sliderBannerPage button");
+		var slideA = document.querySelectorAll(".idx_section_1 .frame a");
 		var activePaging = 0;
-
+		var visual_wrap = document.querySelector(".visual_wrap");
+		var imgWidth = 1200;
+		var num_1 = 1;
+		var maxNum = slideA.length - num_1;
+		var minNum = 0
+		var showNum = 0;
 
 		var chPaging = function(num){
 			pageA[activePaging].setAttribute("class","");
@@ -12,8 +18,9 @@
 			activePaging = num;
 		}	
 
-
-
+		function playSildeBanner(num){
+		    visual_wrap.style.marginLeft = -num * imgWidth +"px";
+		}
 		for(var i=0;i<pageA.length;i++){
 			(function(){
 				var k = i;
@@ -42,10 +49,10 @@
 				<div class="frame">
 					<ul class="visual_wrap clearFix">
 						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual.png" alt="비쥬얼이미지1"></a></li>
+						<li class="visual_img_2"><a href="#"><img src="images/main/img_visual_2.png" alt="비쥬얼이미지1"></a></li>
+						<li class="visual_img_3"><a href="#"><img src="images/main/img_visual_3.png" alt="비쥬얼이미지1"></a></li>
+						<li class="visual_img_4"><a href="#"><img src="images/main/img_visual_4.png" alt="비쥬얼이미지1"></a></li>
+						<li class="visual_img_5"><a href="#"><img src="images/main/img_visual_5.png" alt="비쥬얼이미지1"></a></li>
 					</ul>
 				</div>
 					<p class="sliderBannerPage">
