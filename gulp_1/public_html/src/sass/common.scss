@@ -120,3 +120,80 @@ address, em{font-style: normal;}
 #footer>div address{margin-bottom: 5px;}
 #footer>div p,#footer>div address{font-size: 12px;}
 #footer>p{position: absolute;top: 0;right: 13px;}
+// 반응형 12컬럼
+@media (max-width:1024px) {
+  .col_tablet_1{
+    width: 8.333%;
+  }
+  .col_tablet_2{
+    width: 16.666%;
+  }
+  .col_tablet_3{
+    width: 24.999%;
+  }
+  .col_tablet_4{
+    width: 33.33%;
+  }
+  .col_tablet_5{
+    width: 41.665%;
+  }
+  .col_tablet_6{
+    width: 49.998%;
+  }
+  .col_tablet_7{
+    width: 58.331%;
+  }
+  .col_tablet_8{
+    width: 58.331%;
+  }
+  .col_tablet_9{
+    width: 74.997%;
+  }
+  .col_tablet_10{
+    width: 83.33%;
+  }
+  .col_tablet_11{
+    width: 91.663%;
+  }
+  .col_tablet_12{
+    width: 100%;
+  }
+}
+@media (max-width:640px) {
+  .col_mobile_1{
+    width: 8.333%;
+  }
+  .col_mobile_2{
+    width: 16.666%;
+  }
+  .col_mobile_3{
+    width: 24.999%;
+  }
+  .col_mobile_4{
+    width: 33.33%;
+  }
+  .col_mobile_5{
+    width: 41.665%;
+  }
+  .col_mobile_6{
+    width: 49.998%;
+  }
+  .col_mobile_7{
+    width: 58.331%;
+  }
+  .col_mobile_8{
+    width: 58.331%;
+  }
+  .col_mobile_9{
+    width: 74.997%;
+  }
+  .col_mobile_10{
+    width: 83.33%;
+  }
+  .col_mobile_11{
+    width: 91.663%;
+  }
+  .col_mobile_12{
+    width: 100%;
+  }
+}
