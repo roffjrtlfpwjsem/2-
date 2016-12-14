@@ -2,36 +2,55 @@
 <title>EDIYA</title>
 <script type="text/javascript">
 	var init = function(){
-		var pageA =  document.querySelectorAll(".sliderBannerPage button");
-		var slideA = document.querySelectorAll(".idx_section_1 .frame a");
-		var activePaging = 0;
-		var visual_wrap = document.querySelector(".visual_wrap");
-		var imgWidth = 1200;
-		var num_1 = 1;
-		var maxNum = slideA.length - num_1;
-		var minNum = 0
-		var showNum = 0;
+	var pageBtn =  document.querySelectorAll(".sliderBannerPage button");
+	var activePaging = 0;
+	var sUl = document.querySelector("#idx_section_1 .frame ul");
+	var imgWidth = 1200;
+	var showNum = 0;
+	var visualBackground = document.querySelector("#idx_section_1");
+	var maxNum = pageBtn.length-1;
+	var section_1 = document.querySelector("#idx_section_1");
+	var autoSlide = null;
+	addEvent(section_1, "mouseenter",function(){
+		clearInterval(autoSlide);
+	})
+	addEvent(section_1, "mouseleave",function(){
+		autoSlide = setInterval(autoClick,3000);
+	})
+	var autoClick = function(){
+		showNum++;
+		if(showNum > maxNum){showNum = 0;}
+		//console.log(showNum)
+		playSildeBanner(showNum);
+		chPaging(showNum);
+		chBackground(showNum);
+	}
+	autoSlide = setInterval(autoClick,3000);
+	function chBackground(num){
+		var a = eval(num+1);
+		visualBackground.style.backgroundImage = "url(images/main/bg_visual_"+a+".png";
+	}
 
-		var chPaging = function(num){
-			pageA[activePaging].setAttribute("class","");
-			pageA[num].setAttribute("class","on");
-			activePaging = num;
-		}	
-
-		function playSildeBanner(num){
-		    visual_wrap.style.marginLeft = -num * imgWidth +"px";
+	function playSildeBanner(num){
+		    sUl.style.marginLeft = -num * imgWidth +"px";
 		}
-		for(var i=0;i<pageA.length;i++){
+	var chPaging = function(num){
+			pageBtn[activePaging].setAttribute("class","");
+			pageBtn[num].setAttribute("class","on");
+			activePaging = num;
+		}
+	for(var i=0;i<pageBtn.length;i++){
 			(function(){
 				var k = i;
-				addEvnt(pageA[i],"click",function(){
+				addEvent(pageBtn[i],"click",function(){
 					chPaging(k);
 					playSildeBanner(k);
+					chBackground(k);
 					showNum = k;
+
 				});
 			}());
 		}
-	
 	}
 	addEvent(window,"load",init)
 </script>
@@ -48,7 +67,7 @@
 				<h3 class="blind">메인이미지</h3>
 				<div class="frame">
 					<ul class="visual_wrap clearFix">
-						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual.png" alt="비쥬얼이미지1"></a></li>
+						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual_1.png" alt="비쥬얼이미지1"></a></li>
 						<li class="visual_img_2"><a href="#"><img src="images/main/img_visual_2.png" alt="비쥬얼이미지1"></a></li>
 						<li class="visual_img_3"><a href="#"><img src="images/main/img_visual_3.png" alt="비쥬얼이미지1"></a></li>
 						<li class="visual_img_4"><a href="#"><img src="images/main/img_visual_4.png" alt="비쥬얼이미지1"></a></li>
