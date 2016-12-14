@@ -1,6 +1,27 @@
 <? include "inc/top.html"; ?>
 <title>EDIYA FAQ</title>
 <link rel="stylesheet" type="text/css" href="css/faq.css">
+<script type="text/javascript">
+function check(e) {
+	e.preventDefault();
+var user_name = document.querySelector("#faq_2");
+
+var reg_name = /^[가-힣()]{2,4}$/g;
+
+var result_name = reg_name.exec(user_name.value);
+
+if (result_name == null) {
+	alert("이름이 형식에 맞지 않습니다.(2~4자)");
+	return false;
+}
+this.submit();
+}
+function init() {
+var submit = document.querySelector("#faq_submit");
+addEvent(submit,"click",check);
+}
+addEvent(window,"load",init);
+</script>
 </head>
 <body>
 <div id="wrap">
