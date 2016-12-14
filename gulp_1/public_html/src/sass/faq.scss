@@ -13,7 +13,7 @@
     padding-left: 30px;
     font-size: 20px;
     color: #13245e;
-    font-weight: bold;
+    font-weight: 900;
     padding-bottom: 20px;
     background: url(../images/faq/store_icon_circle.png) 0 0 no-repeat;
   }
@@ -25,8 +25,8 @@
     border-collapse: collapse;
     width: 100%;
     color: #333333;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 900;
     thead{
       tr{
         th{
@@ -40,11 +40,11 @@
       td{
         padding: 25px 0;
         border-bottom:1px solid #cccccc;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: normal;
         text-align: center;
         a{
-          margin-left: 80px;
+          margin-left: 100px;
           &:hover, &:focus{
             color: #13245e;
           }
