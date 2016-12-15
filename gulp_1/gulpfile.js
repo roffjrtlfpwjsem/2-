@@ -29,8 +29,8 @@ var paths = {
 // 이미지 파일을 압축한다.
 gulp.task('gulp-imagemin', function () {
 	return gulp.src(paths.img)
-  .pipe(imagemin())
-  .pipe(gulp.dest(dist + '/images'));
+  // .pipe(imagemin())
+  // .pipe(gulp.dest(dist + '/images'));
 });
 
 // 자바스크립트 파일을  압축한다.
