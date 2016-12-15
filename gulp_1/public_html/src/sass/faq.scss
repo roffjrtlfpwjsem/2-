@@ -87,7 +87,7 @@
           +input{
             vertical-align: middle;
             line-height: 28px;
-            width: 148px;
+            width: 12%;
             height: 28px;
             border: 1px solid #cccccc;
             +select{
@@ -100,7 +100,7 @@
             }
           }
           line-height: 28px;
-          width: 148px;
+          width: 13%;
           height: 28px;
           border: 1px solid #cccccc;
         }
@@ -142,7 +142,7 @@
         }
         #faq_6{
           line-height: 28px;
-          width: 698px;
+          width: 60%;
           height: 28px;
           border: 1px solid #cccccc;
         }
@@ -154,14 +154,15 @@
         }
         #faq_8{
           line-height: 28px;
-          width: 930px;
+          width: 60%;
           height: 28px;
           border: 1px solid #cccccc;
+          resize: none;
         }
         #faq_9{
-            line-height: 258px;
-            width: 928px;
-            height: 258px;
+            margin-bottom: -140px;
+            padding-bottom: 250px;
+            width: 65%;
             border: 1px solid #cccccc;
         }
       }
