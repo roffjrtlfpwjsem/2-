@@ -191,3 +191,56 @@
 		background: url(../images/store/store_logo.png) 25px 15px no-repeat;
 	}
 }
+@media (max-width:1024px) {
+.map_wrap .map{
+	display: none;
+}
+.map_wrap .store_form{
+	position: inherit;
+	top: inherit;
+	right: inherit;
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+.search_list .on_off li{
+	display: none;
+}
+.search_tit{
+	padding-left: 50px;
+	background: url(../images/store/store_icon_circle.png) 20px 2px no-repeat;
+}
+}
+@media (max-width:640px) {
+.search_list li a{
+	display: none;
+}
+.search_list li{
+	background: none;
+}
+.search_list li p:first-child,.search_list li p:first-child+p{
+	margin-left: 20px;
+ }
+.map_wrap .store_form .store_t_1 ,.map_wrap .store_form .store_t_2,
+.map_wrap .store_form .store_t_1 ,.map_wrap .store_form .store_t_2,
+.map_wrap .store_form .store_class,.map_wrap .store_form .store_positon_2
+{display: none;}
+.map_wrap{
+	height: inherit;
+}
+.map_wrap .store_form{
+	width: inherit;
+	height: inherit;
+}
+.map_wrap .store_form li{
+	border: none;
+	width: inherit;
+	height: inherit;
+}
+.map_wrap .store_form .store_positon_1 input{
+	display: none;
+}
+.map_wrap .store_form #store_search+label a{
+ margin-bottom: 50px;
+}
+}
