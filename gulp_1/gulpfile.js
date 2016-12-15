@@ -58,7 +58,7 @@ gulp.task('gulp-uglifycss', function () {
 // HTML 파일을 압축한다.
 gulp.task('gulp-minify-html', function () {
 return gulp.src(paths.html)
-  .pipe(minifyhtml())
+  // .pipe(minifyhtml())
 	// .pipe(rewritehtml({path:"images/"}))
   .pipe(gulp.dest(dist + '/'));
 });
