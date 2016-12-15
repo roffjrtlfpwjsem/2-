@@ -1,23 +1,61 @@
-<? include "inc/top.html"; ?>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/common_sub.css">
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<script type="text/javascript" src="js/eventadd.js"></script>
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie8.css">
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="css/ie9.css">
+<![endif]-->
+
 <title>EDIYA</title>
 <script type="text/javascript">
 	var init = function(){
 	var pageBtn =  document.querySelectorAll(".sliderBannerPage button");
 	var activePaging = 0;
 	var sUl = document.querySelector("#idx_section_1 .frame ul");
+	//var storeFi = document.querySelecor(".open_store_imgWrap figure")
 	var imgWidth = 1200;
 	var showNum = 0;
 	var visualBackground = document.querySelector("#idx_section_1");
 	var maxNum = pageBtn.length-1;
 	var section_1 = document.querySelector("#idx_section_1");
 	var autoSlide = null;
-	addEvent(section_1, "mouseenter",function(){
-		clearInterval(autoSlide);
-	})
-	addEvent(section_1, "mouseleave",function(){
-		autoSlide = setInterval(autoClick,3000);
-	})
-	var autoClick = function(){
+	var storeBtn = document.querySelectorAll(".storeBtn_idx button");
+	var maxNumSt = storeBtn.length-1;
+	var storeUl = document.querySelector(".open_store ul");
+	var storeFrame = document.querySelector(".open_store .storeFrame");
+	var storeWidth = 239;
+	var activePagingStore = 0;
+	var showNumSt = 0;
+	var newMenuBtn = document.querySelectorAll(".newMenu_wrap .newMenuBtn button");
+	var maxNumNm = newMenuBtn.length-1;
+	var activePagingNm = 0;
+	var nmenuUl = document.querySelector(".newMenu_wrap ul");
+	var nMenuWidth = 580;
+	var showNumNm = 0;
+
+
+	var playRolling = function(wrap,action_a,action_b,num){
+
+		addEvent(wrap, "mouseenter",function(){ //마우스벗어났을때 사진움직이기
+			clearInterval(action_a);
+		})
+		addEvent(wrap, "mouseleave",function(){ //마우스 아웃은 한요소 !! 리브를 해야함
+			action_a = setInterval(action_b,num)
+		})
+	}
+	//playRolling(storeUl,autoSlideSt,autoClickStore); 요기서부터 하면된다 불러오기 
+	//autoSlideSt = setInterval(autoClickStore,3000);
+	
+	var autoClick = function(a){
 		showNum++;
 		if(showNum > maxNum){showNum = 0;}
 		//console.log(showNum)
@@ -25,7 +63,29 @@
 		chPaging(showNum);
 		chBackground(showNum);
 	}
-	autoSlide = setInterval(autoClick,3000);
+	var autoClickStore = function(){
+		showNumSt++;
+		if(showNumSt > maxNumSt){showNumSt = 0;}
+		//console.log(showNumSt)
+		playSildeStore(showNumSt);
+		chStore(showNumSt);
+	}
+	var autoClickNmenu = function(){
+		showNumNm++;
+		if(showNumNm > maxNumNm){showNumNm = 0;}
+		//console.log(showNumNm)
+		playSildeStore(showNumNm);
+		chStore(showNumNm);
+	}
+	
+
+	autoSlide = setInterval(autoClick,4000);
+	playRolling(section_1,autoSlide,autoClick,4000);
+	autoSlidest = setInterval(autoClickStore,2000);
+	playRolling(storeFrame,autoSlidest,autoClickStore,2000);
+
+	
+
 	function chBackground(num){
 		var a = eval(num+1);
 		visualBackground.style.backgroundImage = "url(images/main/bg_visual_"+a+".png";
@@ -34,12 +94,28 @@
 	function playSildeBanner(num){
 		    sUl.style.marginLeft = -num * imgWidth +"px";
 		}
+	function playSildeStore(num){
+	    storeUl.style.marginLeft = -num * storeWidth +"px";
+	}
+	function playSildeNmenu(num){
+	    nmenuUl.style.marginLeft = -num * nMenuWidth +"px";
+	}
 	var chPaging = function(num){
 			pageBtn[activePaging].setAttribute("class","");
 			pageBtn[num].setAttribute("class","on");
 			activePaging = num;
 		}
-	for(var i=0;i<pageBtn.length;i++){
+	var chStore = function(num){
+			storeBtn[activePagingStore].setAttribute("class","");
+			storeBtn[num].setAttribute("class","on");
+			activePagingStore = num;
+		}
+	var chNmenu = function(num){
+			newMenuBtn[activePagingNm].setAttribute("class","");
+			newMenuBtn[num].setAttribute("class","on");
+			activePagingNm = num;
+		}
+	for(var i=0;i<pageBtn.length;i++){ //비쥬얼버튼
 			(function(){
 				var k = i;
 				addEvent(pageBtn[i],"click",function(){
@@ -51,6 +127,33 @@
 				});
 			}());
 		}
+	for(var i=0;i<storeBtn.length;i++){
+			(function(){
+				var k = i;
+				addEvent(storeBtn[i],"click",function(){
+					chStore(k);
+					playSildeStore(k);
+					showNumSt = k;
+				});
+			}());
+		}
+	for(var i=0;i<newMenuBtn.length;i++){
+		(function(){
+			var k = i;
+			addEvent(newMenuBtn[i],"click",function(){
+				chNmenu(k);
+				playSildeNmenu(k);
+				showNumNm = k;
+			});
+		}());
+	}
+	
+
+
+
+
+
+
 	}
 	addEvent(window,"load",init)
 </script>
@@ -58,7 +161,82 @@
 <body>
 <div id="wrap">
 <!-- 헤더영역 -->
-<? include "inc/header.html"; ?>
+<div id="header_wrap">
+		<header class="header">
+			<div class="skipmenu"><a href="#container">본문바로가기</a></div>
+			<h1><a href="index.html"><img src="images/common/logo.png" alt="로고"></a></h1>
+			<h2 class="blind">유틸메뉴</h2>
+			<div class="util_wrap">
+				<ul>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">이디야멤버스</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">쇼핑몰</a></li>
+				</ul>
+				<select name="lang" id="lang" title="언어를선택해주세요">
+					<option value="언어선택">LANGUAGE</option>
+					<option value="한국어">KOREAN</option>
+					<option value="영어">ENGLISH</option>
+					<option value="중국어">CHINESE</option>
+				</select>
+			</div>
+			<h2 class="blind">메인메뉴</h2>
+			<ul class="gnb clearFix">
+				<li><a href="../dist/ediyacoffee.html">EDIYA COFFEE</a></li>
+				<li><a href="../dist/ediyacoffeelab.html">EDIYA COFFEE LAB</a></li>
+				<li><a href="../dist/product.html">PRODUCT</a></li>
+				<li><a href="../dist/franchise.html">FRANCHISE</a></li>
+				<li><a href="../dist/event.html">EVENT and NEWS</a></li>
+				<li><a href="../dist/store.html">STORE</a></li>
+			</ul>
+		</header>
+		<h3 class="blind">2depth서브메뉴</h3>
+		<div class="subMenu_wrap">
+			<ul class="subMenu">
+				<li>
+					<ul>
+						<li><a href="../dist/ediyacoffee.html">회사소개</a></li>
+						<li><a href="../dist/findStore.html">찾아오시는길</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><a href="../dist/ediyacoffeelab.html">EDIYA LAB 소개</a></li>
+						<li><a href="../dist/ediyacoffeelab_wd.html">EDIYA LAB 원두</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><a href="../dist/product.html">신제품</a></li>
+						<li><a href="#">COFFEE</a></li>
+						<li><a href="#">원두</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><a href="../dist/franchise.html">가맹안내</a></li>
+						<li><a href="../dist/academy.html">커피아카데미</a></li>
+						<li><a href="../dist/faq.html">FAQ</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><a href="../dist/news.html">이디야소식</a></li>
+						<li><a href="../dist/event.html">이벤트</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li><a href="../dist/findStore.html">매장찾기</a></li>
+						<li><a href="http://www.ediyastore.com/shop/main/index.php">이디야 쇼핑몰</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
 <!-- //헤더영역 -->
 <!-- 컨테이너영역 -->
 	<div id="container">
@@ -88,10 +266,13 @@
 			<div class="idx_section_2_in clearFix">
 				<div class="newMenu_wrap">
 					<h3><img src="images/main/title_newMenu.png" alt="신메뉴소개"></h3>
-					<ul>
-						<li><a href="#"><img src="images/main/img_newMenu.png" alt="신메뉴이미지1"></a></li>
-					</ul>
-					<p>
+					<div class="frame_newMenu">
+						<ul class = "clearFix">
+							<li><a href="#"><img src="images/main/img_newMenu_1.png" alt="신메뉴이미지1"></a></li>
+							<li><a href="#"><img src="images/main/img_newMenu_2.png" alt="신메뉴이미지2"></a></li>
+						</ul>
+					</div>
+					<p class="newMenuBtn">
 						<button class="on">첫번째이미지보기</button>
 						<button>두번째이미지보기</button>
 					</p>
@@ -114,11 +295,35 @@
 					</form>
 					<div class="open_store">
 						<h4>신규 오픈 매장</h4>
-						<figure>
-						<a href="#"><img src="images/main/img_newStore.png" alt="포천운천점"></a>
-							<figcaption>포천운천점</figcaption>
-						</figure>
-						<p>
+							<div class="storeFrame">
+								<ul class="open_store_imgWrap">
+									<li>
+										<figure>
+										<a href="#"><img src="images/main/img_newStore_1.png" alt="포천운천점"></a>
+											<figcaption>포천운천점</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+										<a href="#"><img src="images/main/img_newStore_2.png" alt="사천사주리점 "></a>
+											<figcaption>사천사주리점 </figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+										<a href="#"><img src="images/main/img_newStore_3.png" alt="청주복대사거리점"></a>
+											<figcaption>청주복대사거리점</figcaption>
+										</figure>
+									</li>
+									<li>
+										<figure>
+										<a href="#"><img src="images/main/img_newStore_4.png" alt="문정KDU타워점"></a>
+											<figcaption>문정KDU타워점</figcaption>
+										</figure>
+									</li>
+								</ul>
+							</div>
+						<p class ="storeBtn_idx">
 							<button class="on">첫번째이미지보기</button>
 							<button>두번째이미지보기</button>
 							<button>세번째이미지보기</button>
@@ -219,6 +424,54 @@
 										<figure>
 											<img src="images/main/img_mall_3.png" alt="핸드드립다크불루">
 												<figcaption><p>이디야 다크블루 42g </p><strong>5,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_4.png" alt="핸드드립다크불루">
+												<figcaption><p>비니스트 마일드 아메리카노 100개입 기획</p><strong>19,800원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_5.png" alt="핸드드립다크불루">
+												<figcaption><p>비니스트 오리지널 아메리카노 100개입 기획</p><strong>19,800원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_6.png" alt="핸드드립다크불루">
+												<figcaption><p>비니스트 오리지널(50개입)</p><strong>10,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_7.png" alt="핸드드립다크불루">
+												<figcaption><p>라이트 머그 오렌지</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_8.png" alt="핸드드립다크불루">
+												<figcaption><p>라이트 머그 블루</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_9.png" alt="핸드드립다크불루">
+												<figcaption><p>라이트 머그 화이트</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
 										</figure>
 									</a>
 								</li>

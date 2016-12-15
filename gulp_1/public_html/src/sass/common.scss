@@ -57,7 +57,7 @@ address, em{font-style: normal;}
 #container{padding-top: 119px;padding-bottom: 77px;}
 
 #idx_section_1{position: relative;margin-bottom: 37px;height: 417px;background: url("../images/main/bg_visual_1.png") center 0 no-repeat;}
-.frame {overflow: hidden;margin:0 auto;width: 1200px;overflow: hidden;}
+.frame {overflow: hidden;margin:0 auto;width: 1200px;}
 .visual_wrap{width: 10000px;overflow: hidden;}
 .visual_wrap li{position: relative;float: left;}
 .visual_wrap img{max-height: 417px;margin: 0 auto}
@@ -67,15 +67,22 @@ address, em{font-style: normal;}
 
 #idx_section_2{margin-bottom: 40px}
 .newMenu_wrap{position: relative;width: 580px;float: left;}
+.frame_newMenu{width: 580px;overflow: hidden}
+.newMenu_wrap ul{width: 1200px; overflow: hidden}
+.newMenu_wrap ul li{float: left}
 .newMenu_wrap h3,.store_wrap h3,.mall_wrap h3{margin-bottom: 18px;}
-.newMenu_wrap ul+p,.mall_wrap>p,.open_store>p{position: absolute;top:12px; right: 5px;}
-.newMenu_wrap ul+p>button,.mall_wrap>p>button,.open_store>p>button{background: url("../images/common/btn_idx.png") 0 0 no-repeat;}
-.newMenu_wrap ul+p>button.on,.mall_wrap>p>button.on,.open_store>p>button.on{background: url("../images/common/btn_idx_on.png") 0 0 no-repeat;}
+.newMenu_wrap >p,.mall_wrap>p,.open_store>p{position: absolute;top:12px; right: 5px;}
+.newMenu_wrap >p>button,.mall_wrap>p>button,.open_store>p>button{background: url("../images/common/btn_idx.png") 0 0 no-repeat;}
+.newMenu_wrap >p>button.on,.mall_wrap>p>button.on,.open_store>p>button.on{background: url("../images/common/btn_idx_on.png") 0 0 no-repeat;}
 .store_wrap{float: right;width: 580px;}
 .store_wrap form input[type=text]{width: 537px;padding: 8px 3px;}
 .store_wrap form input[type=image]{margin-top: -4px;}
 .store_wrap form {margin-bottom: 27px;}
 .store_wrap .open_store{float: left;width:240px;position: relative;}
+
+.storeFrame{width: 239px; overflow: hidden}
+.storeFrame ul{width: 2000px; overflow: hidden}
+.storeFrame ul li{float: left}
 .store_wrap .quickService{float: left;width: 219px;margin-left: 50px;}
 .store_wrap .open_store h4,.store_wrap .quickService h4,.idx_section_3_in ul li h4{font-size:17px; font-weight: bold;margin-bottom: 17px;}
 .store_wrap .quickService ul li{float: left;padding: 0 19px;}
