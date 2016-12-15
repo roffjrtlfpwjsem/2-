@@ -134,3 +134,11 @@ form{
    margin-right: 5px;
   }
 }
+@media (max-width:640px) {
+  form p{
+    display: none;
+  }
+  table tbody tr td+td{
+     padding: 0 20px;
+  }
+}

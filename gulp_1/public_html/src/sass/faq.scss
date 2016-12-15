@@ -209,6 +209,24 @@
     }
   }
 }
-@media (max-width:1024px) {
-
+@media (max-width:640px) {
+  .faq_wrap h2{
+    font-size: 14px;
+  }
+.faq_wrap .form_title{
+  display: none;
+}
+.faq_form{
+  display: none;
+}
+.faq_wrap table .w180{
+  width: inherit;
+  width: 18%;
+}
+.faq_wrap table tbody td{
+  padding: 20px;
+ a{
+  margin: 0;
+  }
+ }
 }

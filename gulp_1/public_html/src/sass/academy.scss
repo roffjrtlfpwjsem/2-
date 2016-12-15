@@ -88,5 +88,13 @@
   }
 }
 @media (max-width:1024px) {
-
+.academy_top dl{
+ background-position: center;
+}
+.academy_top dl dt,.academy_top dl dd{
+  display: none;
+}
+}
+@media (max-width:640px) {
+  .academy_top dl{display: none;}
 }

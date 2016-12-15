@@ -44,3 +44,16 @@
 		}
 	}
 }
+@media (max-width:1024px) {
+.main_contents .event_box{
+	width: 50%;
+}
+}
+@media (max-width:640px) {
+	.main_contents .event_box{
+		width: 100%;
+	}
+	.main_contents .event_box a{
+		font-size: 14px;
+	}
+}
