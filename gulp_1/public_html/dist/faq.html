@@ -36,12 +36,13 @@ if (result_name == null || result_email == null || result_title == null ||
 
 this.submit();
 }
-var fselect = function () {
+var fselect = function (e) {
 var chinput = document.querySelector("#faq_3+input");
-if (this.value == "직접입력") {
+
+if (e.srcElement.value == "직접입력") {
 	chinput.value = "";
 }else {
-	chinput.value = this.value;
+	chinput.value = e.srcElement.value;
 }
 }
 function init() {
