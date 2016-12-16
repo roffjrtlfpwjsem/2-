@@ -1,26 +1,12 @@
-<!doctype html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/common_sub.css">
-<script type="text/javascript" src="js/html5shiv.min.js"></script>
-<script type="text/javascript" src="js/eventadd.js"></script>
-<!--[if IE 8]>
-<link rel="stylesheet" type="text/css" href="css/ie8.css">
-<![endif]-->
-<!--[if IE 9]>
-<link rel="stylesheet" type="text/css" href="css/ie9.css">
-<![endif]-->
-
+<? include "inc/top.html"; ?>
 <title>EDIYA</title>
 <script type="text/javascript">
 	var init = function(){
-	var pageBtn =  document.querySelectorAll(".sliderBannerPage button");
+	var pageBtn = document.querySelectorAll(".sliderBannerPage button");
+	var mallBtn = document.querySelectorAll(".mallBtn button");
 	var activePaging = 0;
 	var sUl = document.querySelector("#idx_section_1 .frame ul");
+	var mallUl = document.querySelector(".frame_mall .mall_wrap_in");
 	//var storeFi = document.querySelecor(".open_store_imgWrap figure")
 	var imgWidth = 1200;
 	var showNum = 0;
@@ -36,12 +22,15 @@
 	var showNumSt = 0;
 	var newMenuBtn = document.querySelectorAll(".newMenu_wrap .newMenuBtn button");
 	var maxNumNm = newMenuBtn.length-1;
+	var maxNumMa = mallBtn.length-1;
 	var activePagingNm = 0;
+	var activePagingMa = 0;
 	var nmenuUl = document.querySelector(".newMenu_wrap ul");
 	var nMenuWidth = 580;
+	var mallWidth = 552;
 	var showNumNm = 0;
-
-
+	var showNumMa = 0;
+	/*이미지슬라이드 스크립트*/
 	var playRolling = function(wrap,action_a,action_b,num){
 
 		addEvent(wrap, "mouseenter",function(){ //마우스벗어났을때 사진움직이기
@@ -53,7 +42,6 @@
 	}
 	//playRolling(storeUl,autoSlideSt,autoClickStore); 요기서부터 하면된다 불러오기 
 	//autoSlideSt = setInterval(autoClickStore,3000);
-	
 	var autoClick = function(a){
 		showNum++;
 		if(showNum > maxNum){showNum = 0;}
@@ -76,20 +64,23 @@
 		playSildeStore(showNumNm);
 		chStore(showNumNm);
 	}
-	
-
+	var autoClickMall = function(){
+		showNumMa++;
+		if(showNumMa > maxNumMa){showNumMa = 0;}
+		//console.log(showNumMa)
+		playSildeMall(showNumMa);
+		chMall(showNumMa);
+	}
 	autoSlide = setInterval(autoClick,5000);
 	playRolling(visualBackground,autoSlide,autoClick,5000);
 	autoSlidest = setInterval(autoClickStore,2000);
 	playRolling(storeFrame,autoSlidest,autoClickStore,2000);
-
-	
-
+	autoSlideMa = setInterval(autoClickMall,3000);
+	playRolling(mallUl,autoSlideMa,autoClickMall,3000);
 	function chBackground(num){
-		var a = eval(num+1);
-		visualBackground.style.backgroundImage = "url(images/main/bg_visual_"+a+".png";
+		var a = num+1;
+		visualBackground.style.backgroundImage = "url(images/main/bg_visual_"+a+".png)";
 	}
-
 	function playSildeBanner(num){
 		    sUl.style.marginLeft = -num * imgWidth +"px";
 		}
@@ -99,6 +90,10 @@
 	function playSildeNmenu(num){
 	    nmenuUl.style.marginLeft = -num * nMenuWidth +"px";
 	}
+	function playSildeMall(num){
+	    mallUl.style.marginLeft = -num * mallWidth +"px";
+	}
+
 	var chPaging = function(num){
 			pageBtn[activePaging].setAttribute("class","");
 			pageBtn[num].setAttribute("class","on");
@@ -114,6 +109,11 @@
 			newMenuBtn[num].setAttribute("class","on");
 			activePagingNm = num;
 		}
+	var chMall = function(num){
+			mallBtn[activePagingMa].setAttribute("class","");
+			mallBtn[num].setAttribute("class","on");
+			activePagingMa = num;
+		}	
 	for(var i=0;i<pageBtn.length;i++){ //비쥬얼버튼
 			(function(){
 				var k = i;
@@ -122,7 +122,6 @@
 					playSildeBanner(k);
 					chBackground(k);
 					showNum = k;
-
 				});
 			}());
 		}
@@ -146,13 +145,30 @@
 			});
 		}());
 	}
-	
+	for(var i=0;i<mallBtn.length;i++){
+		(function(){
+			var k = i;
+			addEvent(mallBtn[i],"click",function(){
+				chMall(k);
+				playSildeMall(k);
+				showNumMa = k;
+			});
+		}());
+	}
+	/*//이미지슬라이드 스크립트*/
 
 
+		var header_wrap = document.querySelector("#wrap #header_wrap");
+		var subMenu_wrap = document.querySelector("#wrap #header_wrap .subMenu_wrap");
+		function displaySgnb(){
+			subMenu_wrap.style.top = 100+"px";
+		}
+		function resetSgnb(){
+			subMenu_wrap.style.top = -1000+"px";
+		}
 
-
-
-
+	 	addEvent(header_wrap,"mouseover focus",displaySgnb);
+	 	addEvent(header_wrap,"mouseout blur",resetSgnb);
 	}
 	addEvent(window,"load",init)
 </script>
@@ -160,81 +176,8 @@
 <body>
 <div id="wrap">
 <!-- 헤더영역 -->
-<div id="header_wrap">
-		<header class="header">
-			<div class="skipmenu"><a href="#container">본문바로가기</a></div>
-			<h1><a href="index.html"><img src="images/common/logo.png" alt="로고"></a></h1>
-			<h2 class="blind">유틸메뉴</h2>
-			<div class="util_wrap">
-				<ul>
-					<li><a href="login.html">로그인</a></li>
-					<li><a href="join.html">회원가입</a></li>
-					<li><a href="#">이디야멤버스</a></li>
-					<li><a href="#">고객센터</a></li>
-					<li><a href="#">쇼핑몰</a></li>
-				</ul>
-				<select name="lang" id="lang" title="언어를선택해주세요">
-					<option value="언어선택">LANGUAGE</option>
-					<option value="한국어">KOREAN</option>
-					<option value="영어">ENGLISH</option>
-					<option value="중국어">CHINESE</option>
-				</select>
-			</div>
-			<h2 class="blind">메인메뉴</h2>
-			<ul class="gnb clearFix">
-				<li><a href="../dist/ediyacoffee.html">EDIYA COFFEE</a></li>
-				<li><a href="../dist/ediyacoffeelab.html">EDIYA COFFEE LAB</a></li>
-				<li><a href="../dist/product.html">PRODUCT</a></li>
-				<li><a href="../dist/franchise.html">FRANCHISE</a></li>
-				<li><a href="../dist/event.html">EVENT and NEWS</a></li>
-				<li><a href="../dist/store.html">STORE</a></li>
-			</ul>
-		</header>
-		<h3 class="blind">2depth서브메뉴</h3>
-		<div class="subMenu_wrap">
-			<ul class="subMenu">
-				<li>
-					<ul>
-						<li><a href="../dist/ediyacoffee.html">회사소개</a></li>
-						<li><a href="../dist/findStore.html">찾아오시는길</a></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li><a href="../dist/ediyacoffeelab.html">EDIYA LAB 소개</a></li>
-						<li><a href="../dist/ediyacoffeelab_wd.html">EDIYA LAB 원두</a></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li><a href="../dist/product.html">신제품</a></li>
-						<li><a href="#">COFFEE</a></li>
-						<li><a href="#">원두</a></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li><a href="../dist/franchise.html">가맹안내</a></li>
-						<li><a href="../dist/academy.html">커피아카데미</a></li>
-						<li><a href="../dist/faq.html">FAQ</a></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li><a href="../dist/news.html">이디야소식</a></li>
-						<li><a href="../dist/event.html">이벤트</a></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li><a href="../dist/findStore.html">매장찾기</a></li>
-						<li><a href="http://www.ediyastore.com/shop/main/index.php">이디야 쇼핑몰</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
+<? include "inc/header.html"; ?>
+
 
 <!-- //헤더영역 -->
 <!-- 컨테이너영역 -->
@@ -367,7 +310,7 @@
 			<div class="idx_section_3_in">
 				<ul class="clearFix">
 					<li>
-						<h4>브랜드 소개</h4>
+						<h4>브랜드소개</h4>
 						<a href="#"><img src="images/main/logo_st3.png" alt="브랜드소개"></a>
 						<p>진심을 담은 커피, 커피한잔의 행복<br/>이디야커피를 소개합니다.</p>
 					</li>
@@ -487,7 +430,7 @@
 							</li>
 						</ul>
 					</div>
-					<p >
+					<p class="mallBtn">
 						<button class="on"><span>첫번째이미지보기</span></button>
 						<button><span>두번째이미지보기</span></button>
 						<button><span>세번째이미지보기</span></button>
@@ -520,6 +463,7 @@
 			</div>
 		</section>
 		<!-- //이디야몰 영역 -->
+	</div>
 	</div>
 <!-- //컨테이너영역 -->
 <!-- 퀵 영역 -->
