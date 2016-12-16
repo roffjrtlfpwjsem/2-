@@ -51,8 +51,8 @@ return gulp.src(paths.sass)
 // css 압축
 gulp.task('gulp-uglifycss', function () {
    return gulp.src(paths.cssmin)
-	.pipe(css())
-  .pipe(gulp.dest(dist + '/css'));
+	// .pipe(css())
+  // .pipe(gulp.dest(dist + '/css'));
 });
 
 // HTML 파일을 압축한다.

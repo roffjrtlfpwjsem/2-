@@ -26,7 +26,6 @@
 	var showNum = 0;
 	var visualBackground = document.querySelector("#idx_section_1");
 	var maxNum = pageBtn.length-1;
-	var section_1 = document.querySelector("#idx_section_1");
 	var autoSlide = null;
 	var storeBtn = document.querySelectorAll(".storeBtn_idx button");
 	var maxNumSt = storeBtn.length-1;
@@ -79,8 +78,8 @@
 	}
 	
 
-	autoSlide = setInterval(autoClick,4000);
-	playRolling(section_1,autoSlide,autoClick,4000);
+	autoSlide = setInterval(autoClick,5000);
+	playRolling(visualBackground,autoSlide,autoClick,5000);
 	autoSlidest = setInterval(autoClickStore,2000);
 	playRolling(storeFrame,autoSlidest,autoClickStore,2000);
 

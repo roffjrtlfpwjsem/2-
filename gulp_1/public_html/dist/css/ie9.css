@@ -1,1 +1,7 @@
-.faq_form ul li{position:relative}#faq_9{position:absolute;top:20px;left:185px}
+.faq_form ul li {
+  position: relative; }
+
+#faq_9 {
+  position: absolute;
+  top: 20px;
+  left: 185px; }

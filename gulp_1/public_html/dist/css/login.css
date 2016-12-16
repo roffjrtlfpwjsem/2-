@@ -1,1 +1,173 @@
-#container{padding-bottom:0}#contents_wrap h3{margin-bottom:0}#visual{background:url("../images/login/bg_login_v2.png") center 0 no-repeat}.w1200ma .pl50{color:#13245e;font-size:24px;font-weight:bold;padding:68px 50px 110px}.w1200ma .pl50 span{display:block;margin-top:15px;color:#333;font-size:18px}.login_wrap{width:95%;border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;border-top:1px solid #000;margin:0 auto 73px;padding:40px 63px 55px 109px;background:url("../images/login/c_line_login.png") 587px center no-repeat}.login_wrap .login_wrap_in1{width:400px;float:left;padding-top:62px;position:relative}.login_wrap .login_wrap_in1 p:first-child{font-size:20px;font-weight:800;margin:0 0 18px -20px;letter-spacing:-2px}.login_wrap .login_wrap_in1 input[type=text],.login_wrap .login_wrap_in1 input[type=password]{width:300px;padding:5px 10px;border:1px solid #d6d6d6}.login_wrap .login_wrap_in1 p.login_btn{position:absolute;top:104px;left:305px}.login_wrap .login_wrap_in1 .q_join_wrap{padding-top:30px}.login_wrap .login_wrap_in1 .q_join_wrap span{margin-left:55px;margin-right:10px}.login_wrap .pb_5{padding-bottom:5px}.login_wrap .login_wrap_in2{background:url("../images/login/dashed_line.png") 0 154px no-repeat;float:right;width:417px;padding-top:13px}.login_wrap .login_wrap_in2 div{padding-left:129px}.login_wrap .login_wrap_in2 div.findId{background:url("../images/login/img_id.png") 30px 15px no-repeat;margin-bottom:80px}.login_wrap .login_wrap_in2 div.findPw{background:url("../images/login/img_pw.png") 30px 15px no-repeat}.login_wrap .login_wrap_in2 div a{display:inline-block}.login_wrap .login_wrap_in2 h4{font-size:16px;font-weight:800}.login_wrap .login_wrap_in2 h4+p{padding:10px 0 20px 0}.cv_wrap_log{margin:0 auto 140px;border:1px solid #d6d6d6;width:95%;padding:52px 410px 44px 225px;background:url("../images/login/img_gift.png") 84px 41px no-repeat}.cv_wrap_log h4{margin-bottom:20px}.cv_wrap_log p{line-height:22px}.cv_wrap_log p>strong{font-weight:800}.step_join{width:95%;margin:0 auto 86px}.step_join li{float:left;position:relative;padding-left:40px}.step_join li:after{content:url("../images/join/arrow_join.png");display:inline-block;width:40px;height:46px;position:absolute;top:9px;left:265px}.step_join li:first-child{padding:0}.step_join li:first-child+li:after{left:305px}.step_join li:first-child+li+li:after{left:305px}.step_join li:first-child+li+li+li:after{content:none}.join_wrap{width:95%;border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6;border-top:1px solid #000;margin:0 auto;padding:60px 139px 40px 180px;position:relative;background:url("../images/login/c_line_login.png") center center no-repeat}.join_wrap h4{font-size:16px;font-weight:800;line-height:25px}.join_wrap p.btn_sign{padding-top:10px}.join_wrap .ph_sign_wrap{float:left;width:219px;height:234px;text-align:center}.join_wrap .ph_sign_wrap img{margin-bottom:25px}.join_wrap .ip_sign_wrap{padding-top:10px;float:right;width:320px;height:234px;text-align:center}.join_wrap .ip_sign_wrap img{margin-bottom:36px}.join_wrap p.bntPrev_join{width:100%;position:absolute;top:390px;left:0;text-align:center}.commend_join{padding:8px 0 176px 38px}.sign_wrap_jo{margin:0 auto 140px;border:1px solid #d6d6d6;width:95%;padding:52px 200px 44px 225px;background:url("../images/join/img_sign.png") 84px 65px no-repeat}.sign_wrap_jo h4{margin-bottom:20px}.sign_wrap_jo p{line-height:22px}.sign_wrap_jo p>strong{font-weight:800;font-size:16px}.mb_10{margin-bottom:10px}
+#container {
+  padding-bottom: 0; }
+
+#contents_wrap h3 {
+  margin-bottom: 0; }
+
+#visual {
+  background: url("../images/login/bg_login_v2.png") center 0 no-repeat; }
+
+.w1200ma .pl50 {
+  color: #13245e;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 68px 50px 110px; }
+  .w1200ma .pl50 span {
+    display: block;
+    margin-top: 15px;
+    color: #333333;
+    font-size: 18px; }
+
+/*LOGIN*/
+.login_wrap {
+  width: 95%;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #000;
+  margin: 0 auto 73px;
+  padding: 40px 63px 55px 109px;
+  background: url("../images/login/c_line_login.png") 587px center no-repeat; }
+  .login_wrap .login_wrap_in1 {
+    width: 400px;
+    float: left;
+    padding-top: 62px;
+    position: relative; }
+    .login_wrap .login_wrap_in1 p:first-child {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 18px -20px;
+      letter-spacing: -2px; }
+    .login_wrap .login_wrap_in1 input[type=text], .login_wrap .login_wrap_in1 input[type=password] {
+      width: 300px;
+      padding: 5px 10px;
+      border: 1px solid #d6d6d6; }
+    .login_wrap .login_wrap_in1 p.login_btn {
+      position: absolute;
+      top: 104px;
+      left: 305px; }
+    .login_wrap .login_wrap_in1 .q_join_wrap {
+      padding-top: 30px; }
+      .login_wrap .login_wrap_in1 .q_join_wrap span {
+        margin-left: 55px;
+        margin-right: 10px; }
+  .login_wrap .pb_5 {
+    padding-bottom: 5px; }
+  .login_wrap .login_wrap_in2 {
+    background: url("../images/login/dashed_line.png") 0 154px no-repeat;
+    float: right;
+    width: 417px;
+    padding-top: 13px; }
+    .login_wrap .login_wrap_in2 div {
+      padding-left: 129px; }
+      .login_wrap .login_wrap_in2 div.findId {
+        background: url("../images/login/img_id.png") 30px 15px no-repeat;
+        margin-bottom: 80px; }
+      .login_wrap .login_wrap_in2 div.findPw {
+        background: url("../images/login/img_pw.png") 30px 15px no-repeat; }
+      .login_wrap .login_wrap_in2 div a {
+        display: inline-block; }
+    .login_wrap .login_wrap_in2 h4 {
+      font-size: 16px;
+      font-weight: 800; }
+      .login_wrap .login_wrap_in2 h4 + p {
+        padding: 10px 0 20px 0; }
+
+.cv_wrap_log {
+  margin: 0 auto 140px;
+  border: 1px solid #d6d6d6;
+  width: 95%;
+  padding: 52px 410px 44px 225px;
+  background: url("../images/login/img_gift.png") 84px 41px no-repeat; }
+  .cv_wrap_log h4 {
+    margin-bottom: 20px; }
+  .cv_wrap_log p {
+    line-height: 22px; }
+    .cv_wrap_log p > strong {
+      font-weight: 800; }
+
+/*//LOGIN*/
+/*join*/
+.step_join {
+  width: 95%;
+  margin: 0 auto 86px; }
+  .step_join li {
+    float: left;
+    position: relative;
+    padding-left: 40px; }
+    .step_join li:after {
+      content: url("../images/join/arrow_join.png");
+      display: inline-block;
+      width: 40px;
+      height: 46px;
+      position: absolute;
+      top: 9px;
+      left: 265px; }
+    .step_join li:first-child {
+      padding: 0; }
+    .step_join li:first-child + li:after {
+      left: 305px; }
+    .step_join li:first-child + li + li:after {
+      left: 305px; }
+    .step_join li:first-child + li + li + li:after {
+      content: none; }
+
+.join_wrap {
+  width: 95%;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  border-top: 1px solid #000;
+  margin: 0 auto;
+  padding: 60px 139px 40px 180px;
+  position: relative;
+  background: url("../images/login/c_line_login.png") center center no-repeat; }
+  .join_wrap h4 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 25px; }
+  .join_wrap p.btn_sign {
+    padding-top: 10px; }
+  .join_wrap .ph_sign_wrap {
+    float: left;
+    width: 219px;
+    height: 234px;
+    text-align: center; }
+    .join_wrap .ph_sign_wrap img {
+      margin-bottom: 25px; }
+  .join_wrap .ip_sign_wrap {
+    padding-top: 10px;
+    float: right;
+    width: 320px;
+    height: 234px;
+    text-align: center; }
+    .join_wrap .ip_sign_wrap img {
+      margin-bottom: 36px; }
+  .join_wrap p.bntPrev_join {
+    width: 100%;
+    position: absolute;
+    top: 390px;
+    left: 0;
+    text-align: center; }
+
+.commend_join {
+  padding: 8px 0 176px 38px; }
+
+.sign_wrap_jo {
+  margin: 0 auto 140px;
+  border: 1px solid #d6d6d6;
+  width: 95%;
+  padding: 52px 200px 44px 225px;
+  background: url("../images/join/img_sign.png") 84px 65px no-repeat; }
+  .sign_wrap_jo h4 {
+    margin-bottom: 20px; }
+  .sign_wrap_jo p {
+    line-height: 22px; }
+    .sign_wrap_jo p > strong {
+      font-weight: 800;
+      font-size: 16px; }
+
+.mb_10 {
+  margin-bottom: 10px; }
+
+/*//join*/
