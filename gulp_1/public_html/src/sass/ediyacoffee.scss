@@ -3,8 +3,14 @@
 .main_visual{
   text-align: center;
   padding-bottom: 65px;
+	img{
+		max-width:1000px;
+		max-height:347px;
+		width:100%;
+	}
 }
 .list_wrap{
+	padding:0 50px;
   dl{
 		padding:0 150px 85px 335px;
     background: url(../images/ediyacoffee/ediyacoffee_list_1.png) 0 0 no-repeat;
@@ -23,14 +29,14 @@
   }
   dt{
     color: #13245e;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 900;
     padding:30px 0;
   }
   dd{
 		line-height:25px;
 		text-align:justify;
     color: #333;
-    font-size: 18px;
+    font-size: 14px;
   }
 }

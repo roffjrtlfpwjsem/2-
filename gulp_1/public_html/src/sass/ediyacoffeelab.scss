@@ -3,7 +3,17 @@
   padding-bottom: 0;
 }
 #visual {background:url("../images/ediyacoffeelab/ediyacoffeelab_title_bg.jpg") center 0 no-repeat;}
-.main_visual_wrap{position:relative;color:#fff;
+.main_contents{
+	padding:0 15px;
+}
+.main_visual_wrap{
+	position:relative;
+	color:#fff;
+	img{
+		max-width:1200px;
+		max-height:273px;
+		width:100%;
+	}
 	h4{
 		position:absolute;
 		top:30px;
@@ -33,7 +43,8 @@
 		font-weight:bold;
 		img{
 			width:100%;
-			max-width:172px;	
+			max-width:172px;
+			max-height:172px;
 		}
 		span{
 			position:absolute;
@@ -44,14 +55,14 @@
 	}
 }
 .lab_tit{
-	padding-left: 20px;
+	padding-left: 25px;
 	margin-left: 50px;
 	color: #333333;
 	font-size: 18px;
 	font-weight: bold;
 	height: 30px;
 	line-height: 30px;
-	background: url(../images/common/bullet_sub_tit.png) 0 0 no-repeat;
+	background: url(../images/common/icon_circle.png) 0 5px no-repeat;
 }
 .pl50{
 	color: #13245e;

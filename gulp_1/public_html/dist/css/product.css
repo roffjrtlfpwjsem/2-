@@ -5,4 +5,9 @@
   display: block; }
 
 .main_visual {
-  text-align: center; }
+  text-align: center;
+  padding: 0 15px; }
+  .main_visual img {
+    max-width: 1000px;
+    max-height: 1418px;
+    width: 100%; }
