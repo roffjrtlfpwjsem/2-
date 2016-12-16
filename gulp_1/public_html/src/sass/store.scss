@@ -137,13 +137,12 @@
 	}
 }
 .search_tit{
-	padding-left: 30px;
+	padding-left: 90px;
 	color: #13245e;
 	font-size: 20px;
 	font-weight: 900;
 	padding-bottom: 20px;
-	border-bottom: 1px solid #13245e;
-	background: url(../images/store/store_icon_circle.png) 0 2px no-repeat;
+	background: url(../images/store/store_icon_circle.png) 60px 2px no-repeat;
 	strong{
 		color: #ff0000;
 	}
@@ -162,9 +161,15 @@
 			width: 50px;
 			height: 50px;
 			margin-right: 5px;
+			&:first-child{
+				border-top: none;
+			}
 		}
 	}
 	li{
+		&:first-child{
+			border-top: 1px solid #13245e;
+		}
 		a{
 			position: absolute;
 			top: 50px;
@@ -184,10 +189,64 @@
 			margin: 35px 0 10px 150px;
 			background: url(../images/store/store_mark.png) right 0 no-repeat;
 		}
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 		height: 130px;
 		border-bottom: 1px solid #cccccc;
 		position: relative;
 		background: url(../images/store/store_logo.png) 25px 15px no-repeat;
 	}
+}
+@media (max-width:1024px) {
+.map_wrap .map,.search_list .on_off li{display: none;}
+.map_wrap .store_form{
+	margin: 0 auto;
+	width: 600px;
+	position: inherit;
+	top: 80px;
+	right: inherit;
+}
+}
+@media (max-width:640px) {
+	.map_wrap .store_form{
+		width: inherit;
+	}
+	.map_wrap{
+position: inherit;
+height: inherit;
+	}
+	.map_wrap .store_form .store_positon_1{
+		padding-top: 30px;
+		width: 100%;
+		margin: 0 auto;
+	}
+.search_list li a,.map_wrap .store_form .store_t_1,.map_wrap .store_form .store_t_2,
+.map_wrap .store_form .store_class,.map_wrap .store_form .store_positon_1 input,.map_wrap .store_form .store_positon_2
+{
+	display: none;
+}
+.map_wrap .store_form li{
+	border: none;
+	height: inherit;
+	width: 100%;
+}
+.search_list li{
+	background: none;
+}
+.search_list li p:first-child,.search_list li p:first-child+p{
+	margin-left: 20px;
+}
+.map_wrap .store_form #store_search+label a{
+	margin-bottom: 30px;
+}
+.search_tit{
+	padding-left: 60px;
+  background: url(../images/store/store_icon_circle.png) 30px 2px no-repeat;
+}
+.map_wrap .store_form li span{
+	margin-right: 5px;
+}
+.map_wrap .store_form .store_positon_1 select{
+	margin: 0;
+}
 }
