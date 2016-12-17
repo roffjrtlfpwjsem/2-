@@ -47,7 +47,7 @@ address, em{font-style: normal;}
 .header .gnb li:first-child+li+li+li+li+li a{width: 59px;background-image: url(../images/common/title_gnb_6.png);}
 .header .gnb li a:hover{background-position: 0 bottom;}
 #header_wrap{position: relative;}
-#header_wrap .subMenu_wrap{background-color: #fff;width: 100%;position: absolute;top:-212%; left:6px;}
+#header_wrap .subMenu_wrap{background-color: #fff;width: 100%;position: absolute;top:-1000px; left:6px;}
 #header_wrap .subMenu{min-height: 200px;padding: 30px;}
 #header_wrap .subMenu>li {float: left;padding-left: 2%;background: url(../images/common/line_lnb.png) 0 0 no-repeat;min-height: 150px;margin-left: 8%;}
 #header_wrap .subMenu>li:first-child{margin: 0; padding: 0; background: none;}

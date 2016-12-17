@@ -28,6 +28,8 @@
   margin: 0 auto 73px;
   padding: 40px 63px 55px 109px;
   background: url("../images/login/c_line_login.png") 587px center no-repeat; }
+  .login_wrap form {
+    float: left; }
   .login_wrap .login_wrap_in1 {
     width: 400px;
     float: left;
