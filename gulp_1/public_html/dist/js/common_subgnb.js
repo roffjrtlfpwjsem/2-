@@ -1,0 +1,1 @@
+function sgInit(){function e(){n.style.top="100px"}function t(){n.style.top="-1000px"}var o=document.querySelector("#wrap #header_wrap"),n=document.querySelector("#wrap #header_wrap .subMenu_wrap");addEvent(o,"mouseover focus",e),addEvent(o,"mouseout blur",t)}addEvent(window,"load",sgInit);
