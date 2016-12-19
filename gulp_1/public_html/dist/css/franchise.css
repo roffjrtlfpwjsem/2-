@@ -63,4 +63,10 @@
     width: 100%; }
   .main_contents h4 + p + p {
     width: inherit; }
+    .main_contents h4 + p + p + p + p + p{
+      display: none;
+    }
+    .main_contents h4 + p + p + p + p + p + p{
+      padding-top: 40px;
+    }
  }
