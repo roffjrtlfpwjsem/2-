@@ -42,7 +42,7 @@
     padding-bottom: 20px;
     line-height: 20px;
     padding-left: 30px;
-    background: url(../images/academy/store_icon_circle.png) 0 0 no-repeat;
+    background: url(../images/common/icon_circle.png) 0 0 no-repeat;
     color: #13245e;
     font-size: 20px;
     font-weight: 900; }
@@ -82,4 +82,8 @@
 
 @media (max-width: 640px) {
   .academy_top dl {
-    display: none; } }
+    display: none; }
+    .academy_table table thead th:first-child,.academy_table table tbody td:first-child{
+      display: none;
+    }
+  }

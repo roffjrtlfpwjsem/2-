@@ -46,7 +46,6 @@
               margin-bottom: 100px; }
 
 .main_contents ul li {
-  padding-top: 105px;
   position: relative;
   margin-bottom: 90px;
   height: 155px;
@@ -56,17 +55,21 @@
   font-size: 16px;
   color: #13245e;
   font-weight: 900; }
-  .main_contents ul li img {
-    position: absolute;
-    top: 0;
-    left: 45%; }
-
+.main_contents ul li p{
+  padding-bottom: 30px;
+}
 @media (max-width: 640px) {
   .main_contents ul li {
     width: 100%; }
-    .main_contents ul li img {
-      left: 41%; }
   .main_contents h4 + p + p {
     width: inherit; }
-  .main_contents p img {
-    width: 100%; } }
+    .main_contents h4 + p + p + p + p + p{
+      display: none;
+    }
+    .main_contents h4 + p + p + p + p + p + p{
+      padding-top: 40px;
+    }
+    .main_contents h4 + p + p + p img{
+      width: 100%;
+    }
+ }

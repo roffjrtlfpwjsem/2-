@@ -69,3 +69,48 @@
         background: url(../images/product_blendbean/blt_blendbean_roast.png) 0 4px no-repeat;
         padding-left: 10px;
         margin-top: 20px; }
+
+@media (max-width:1024px){
+  .main_contents .content {
+    padding-left:40px;
+    padding-right:40px;
+	}
+}
+@media (max-width:640px){
+	.main_contents{
+		padding:0 15px;
+	}
+	.main_contents h5{
+		height:60px;
+		font-size:15px;
+		line-height:60px;
+	}
+	.main_contents h4{
+		font-size:20px;
+		height:30px;
+	}
+  .main_contents .dot_circle {
+    background: url(../images/common/icon_circle.png) 0 3px no-repeat;
+	}
+	.main_contents .content {
+    padding:10px 10px 20px;
+	}
+  .main_contents .dot_arr {
+    background: url(../images/product_blendbean/tit_arr.gif) 5px 50% no-repeat;
+    padding-left: 15px; }
+	.main_contents .content .blendbean_graph,.main_contents .content .blendbean_mall,.main_contents .content dl {
+		width:100%;
+	}
+	.main_contents .content dl {
+		padding:10px;
+	}
+	.main_contents .content dl dt {
+		font-size: 15px;
+	}
+	.main_contents .content dl .blendbean_txt {
+		font-size:13px;
+	}
+	.main_contents .content dl .dot_star{
+		display:none;
+	}
+}

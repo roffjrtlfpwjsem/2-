@@ -113,8 +113,6 @@ form ul {
 @media (max-width: 640px) {
   form p {
     display: none; }
-  table tbody tr td + td {
-    padding: 0 20px; }
   table tbody tr td:first-child, table thead tr th:first-child {
     display: none; }
   table tbody tr td + td + td, table thead tr th + th + th {
@@ -126,6 +124,15 @@ form ul {
     position: absolute;
     top: 10px;
     right: 10px; }
+    table{
+      table-layout: fixed;
+    }
+    table tbody tr td + td a{
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   table tbody tr td + td {
     position: relative;
     padding: 10px 100px 10px 10px; } }
