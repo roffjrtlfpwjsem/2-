@@ -18,9 +18,10 @@
     padding-bottom: 20px;
     background: url(../images/common/icon_circle.png) 0 0 no-repeat; }
   .faq_wrap table {
+    table-layout: fixed;
     margin-bottom: 100px;
     border-collapse: collapse;
-    width: 100%;    
+    width: 100%;
     color: #333333;
     font-size: 16px;
     font-weight: 900; }
@@ -38,6 +39,10 @@
       font-weight: normal;
       text-align: center; }
       .faq_wrap table tbody td a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         margin-left: 100px; }
         .faq_wrap table tbody td a:hover, .faq_wrap table tbody td a:focus {
           color: #13245e; }
@@ -129,8 +134,8 @@
       border: 1px solid #cccccc;
       resize: none; }
     .faq_wrap .faq_form ul li #faq_9 {
-      margin-bottom: -140px;
-      padding-bottom: 250px;
+      margin-bottom: -150px;
+      padding-bottom: 280px;
       width: 65%;
       border: 1px solid #cccccc;
       resize: none; }
@@ -157,15 +162,16 @@
     height: 330px;
     line-height: 330px; }
   .faq_wrap .faq_form label {
-    margin-right: 30px;
-    line-height: 50px;
-    text-align: center;
+    padding-left: 30px;
+    margin-right: 10px;
+    line-height: 40px;
+    text-align: left;
     display: inline-block;
     color: #333333;
     font-weight: 900;
     font-size: 16px;
     width: 150px;
-    height: 50px;
+    height: 40px;
     background: #f2f2f2; }
     .faq_wrap .faq_form label strong {
       color: red; }

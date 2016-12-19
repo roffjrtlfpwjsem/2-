@@ -82,4 +82,8 @@
 
 @media (max-width: 640px) {
   .academy_top dl {
-    display: none; } }
+    display: none; }
+    .academy_table table thead th:first-child,.academy_table table tbody td:first-child{
+      display: none;
+    }
+  }
