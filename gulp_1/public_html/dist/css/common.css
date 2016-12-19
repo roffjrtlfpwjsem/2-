@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 /*reset*/
@@ -57,12 +57,11 @@ address, em{font-style: normal;}
 #header_wrap .subMenu>li ul li a:hover,#header_wrap .subMenu>li ul li a:focus{color: #13245e;}
 /*헤더종료*/
 #container{padding-top: 119px;padding-bottom: 77px;}
-#idx_section_1{position: relative;margin-bottom: 37px;height: 417px;background: url("../images/main/bg_visual_1.png") center 0 no-repeat;}
+#idx_section_1{position: relative;margin-bottom: 37px;background: url("../images/main/bg_visual_1.png") center 0 no-repeat;}
 .frame{overflow: hidden;margin:0 auto;width: 1200px;}
 #idx_section_1 .frameMb{display: none;}
-.visual_wrapPc,.visual_wrapMb{width: 10000px;overflow: hidden;}
+.visual_wrapPc{width: 10000px;overflow: hidden;}
 .visual_wrapPc li,.visual_wrapMb li{position: relative;float: left;}
-.visual_wrapMb li{width: 1024px;max-height: 417px;}
 .visual_wrapPc img{max-height: 417px;margin: 0 auto}
 #idx_section_1 p{position: absolute;bottom:10px; left: 47%;}
 #idx_section_1 p button.on{background: url("../images/common/btn_visual_on.png") 0 0 no-repeat;}
@@ -75,9 +74,11 @@ address, em{font-style: normal;}
 .newMenu_wrap ul li{float: left;width:50%;}
 .newMenu_wrap .frame_newMenu ul li img{width: 100%;}
 .newMenu_wrap h3,.store_wrap h3,.mall_wrap h3{margin-bottom: 18px;}
-.newMenu_wrap >p,.mall_wrap>p,.open_store>p{position: absolute;top:12px; right: 5px;}
-.newMenu_wrap >p>button,.mall_wrap>p>button,.open_store>p>button{background: url("../images/common/btn_idx.png") 0 0 no-repeat;}
-.newMenu_wrap >p>button.on,.mall_wrap>p>button.on,.open_store>p>button.on{background: url("../images/common/btn_idx_on.png") 0 0 no-repeat;}
+.newMenu_wrap >p.newMenuBtn,.mall_wrap>p,.open_store>p{position: absolute;top:12px; right: 5px;}
+.newMenu_wrap >p.newMenuBtn>button,.mall_wrap>p>button,.open_store>p>button{background: url("../images/common/btn_idx.png") 0 0 no-repeat;}
+.newMenu_wrap >p.newMenuBtn>button.on,.mall_wrap>p>button.on,.open_store>p>button.on{background: url("../images/common/btn_idx_on.png") 0 0 no-repeat;}
+#idx_section_2 .idx_section_2_in .newMenu_wrap .sliderBannerPage{display: none}
+
 .store_wrap{float: right;width: 48.33%;}
 .store_wrap form input[type=text]{width: 88.5%;padding: 8px 3px;}
 .store_wrap form input[type=image]{margin-top: -4px;}
@@ -141,17 +142,28 @@ address, em{font-style: normal;}
 #footer>p{position: absolute;top: 0;right: 13px;}
 #footer_wrapMb{display: none;}
 @media(max-width:1024px){
-  #idx_section_1{background: none !important;}
+  #idx_section_1{background: none !important;position: initial;}
+.visual_wrapMb{width: 500%;}
+.visual_wrapMb li{width: 20%;max-height: 800px;}
+#idx_section_1 .frameMb{position: relative;}
+  .visual_wrapMb{position: relative;}
   #wrap #header_wrap{height: 75px;}
-  #header_wrap .header,#header_wrap .subMenu_wrap,#header_wrap .subMenu_wrap h3,.store_wrap .open_store,#idx_section_1 .frame,#footer_wrap,#idx_section_1 .frame,#quick_wrap,#footer_wrap{display: none;}
+  #header_wrap .header,#header_wrap .subMenu_wrap,#header_wrap .subMenu_wrap h3,.store_wrap .open_store,#footer_wrap,#idx_section_1 .idx_section_1_in .frame,#quick_wrap{display: none;}
   #header_wrap .mbHeader{display: block;position: relative;}
   #header_wrap .mbHeader h1{position: absolute;top: 11px; left: 13px;}
   #header_wrap .mbHeader .mbUtil{position: absolute;top: 16px;right:0;width: 250px;}
   #header_wrap .mbHeader .mbUtil ul li {float: left;margin-left: 15px;text-align: center;}
   #header_wrap .mbHeader .mbUtil ul li:first-child+li+li+li{margin-top: 5px;}
+   #header_wrap .mbHeader .mbUtil span{height: 50px;}
   #container{padding-top: 75px;}
-#idx_section_1 .frameMb{display: block;overflow: hidden;margin: 0 auto; width: 99%;}
+#idx_section_1 .frameMb{display: block;overflow: hidden;margin: 0 auto; width: 100%;}
 #idx_section_1 .frameMb .visual_wrapMb img{width: 100%;}
+#idx_section_2 .idx_section_2_in .newMenu_wrap{margin-bottom: 37px;}
+#idx_section_2 .idx_section_2_in .newMenu_wrap .newMenuBtn{display: none}
+#idx_section_2 .idx_section_2_in .newMenu_wrap .sliderBannerPage{display: block}
+#idx_section_2 p.sliderBannerPage{position: absolute;bottom:10px; left:0;left:47%;}
+#idx_section_2 p.sliderBannerPage button.on{background: url("../images/common/btn_visual_on.png") 0 0 no-repeat;}
+#idx_section_2 p.sliderBannerPage button{background: url("../images/common/btn_visual.png") 0 0 no-repeat;}
 .store_wrap .quickService{width: 100%;}
 .idx_section_3_in ul li{float: left;text-align: center;margin: 0;position: relative;width: 50%;}
 .idx_section_3_in ul li:first-child,.idx_section_3_in ul li:first-child+li{margin-bottom: 60px;}
@@ -159,6 +171,12 @@ address, em{font-style: normal;}
 .idx_section_3_in ul li:before{content:""; background: url("../images/main/bullet_st3.png") 0 0 no-repeat;width: 32px; height: 3px;position: absolute;top:-20px; left:46%;}
 .water_spc_wrap{padding: 0 15%;}
 .water_spc_wrap .water_wrap,.water_spc_wrap .specialy_wrap{float: left;}
+.store_wrap .quickService{margin: 0;}
+.store_wrap .quickService ul{margin: 0 auto;width: 90%;}
+.store_wrap .quickService ul li{width: 25%;padding: 0; margin: 0;}
+.store_wrap .inp_sch{position: relative;}
+.store_wrap form input[type=text]{width: 100%;}
+.store_wrap form input[type=image]{position:absolute;top:3px; right: 0}
 
 #footer_wrapMb{background-color: #20283F;color: #fff;display: block;}
 #footer_wrapMb a{color: #fff;font-size: 12px;}
