@@ -11,19 +11,19 @@
 			}
 			var frm_log = document.querySelector("#contents_wrap .login_wrap form");
 			function chkLogin(e){
-							console.log(1234)
 				e.preventDefault();
 				var reg_id = /^[a-z]{1}\w{7,11}$/g;
 				var reg_pw = /^\w{6,12}$/g;
-				var id_1 = "aaa1234";
+				var id_1 = "aaaaaa1234";
 				var pw_1 = "123411";
 				var inp_id = frm_log.user_id;
+				console.log(inp_id);
 				var inp_pw = frm_log.user_pw;
 				var result_id = reg_id.exec(inp_id.value);
-				var resutl_pw = reg_pw.exec(inp_pw.value);
+				var result_pw = reg_pw.exec(inp_pw.value);
 				if(result_id == null || result_pw == null){
 					if(result_id == null){
-						alert("아이디형식이 잘못외었습니다.");
+						alert("아이디형식이 잘못되었습니다.");
 						inp_id.value = "";
 						inp_id.focus();
 					}else if(result_pw == null){
@@ -37,10 +37,11 @@
 						loginAlt(inp_id,inp_pw);
 						return false;
 					}
-				}else{
-					loginAlt(inp_id,inp_pw);
-					return false;
 				}
+				else{
+            loginAlt(inp_id,inp_pw);
+            return false;
+        }
 				frm_log.submit();
 			}
 			addEvent(frm_log,"submit",chkLogin);
@@ -77,9 +78,9 @@
 						<legend>이디야로그인</legend>
 							<div class="login_wrap_in1">
 								<p>이디야 서비스 이용을 위해 로그인을 해주세요.</p>
-								<p class="pb_5"><input type="text" name="user_id" id="user_id" placeholder="이메일아이디입력" title="이메일아이디를 입력해주세요" class="userId"></p>
-								<p class="pb_5"><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호입력" title="비밀번호를 입력해주세요" class="userPw"></p>
-								<p class="login_btn"><a href="#"><img src="images/login/btn_login.png" alt="로그인버튼"></a></p>
+								<p class="pb_5"><input type="text" name="user_id" id="user_id" placeholder="이메일아이디입력" title="이메일아이디를 입력해주세요"></p>
+								<p class="pb_5"><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호입력" title="비밀번호를 입력해주세요"></p>
+								<p class="login_btn"><input type="image" src="images/login/btn_login.png" alt="로그인버튼"></p>
 								<p class="q_join_wrap">
 									<input type="checkbox" name="save_id" id="save_id"><label for="save_id">아이디저장</label>
 									<span>아직 회원이 아니신가요?</span>
