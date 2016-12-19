@@ -69,4 +69,7 @@
     .main_contents h4 + p + p + p + p + p + p{
       padding-top: 40px;
     }
+    .main_contents h4 + p + p + p img{
+      width: 100%;
+    }
  }
