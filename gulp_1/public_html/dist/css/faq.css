@@ -169,7 +169,11 @@
     background: #f2f2f2; }
     .faq_wrap .faq_form label strong {
       color: red; }
-
+@media (max-width: 1024px){
+.faq_wrap table tbody td a{
+  margin-left: 30px;
+}
+}
 @media (max-width: 640px) {
   .faq_wrap h2 {
     font-size: 14px; }
