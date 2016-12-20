@@ -88,7 +88,8 @@ address, em{font-style: normal;}
 .storeFrame ul{width: 2000px; overflow: hidden}
 .storeFrame ul li{float: left}
 .store_wrap .quickService{float: left;width: 219px;margin-left: 50px;}
-.store_wrap .open_store h4,.store_wrap .quickService h4,.idx_section_3_in ul li h4{font-size:17px; font-weight: bold;margin-bottom: 17px;}
+.store_wrap .open_store h4,.store_wrap .quickService h4{font-size:17px; font-weight: 800;margin-bottom: 17px;}
+.idx_section_3_in ul li h4{font-size: 19px;font-weight: 800;margin-bottom: 17px;}
 .store_wrap .quickService ul li{float: left;padding: 0 19px;}
 .store_wrap .quickService ul li:first-child,.store_wrap .quickService ul li:first-child+li{margin-bottom:10px ;}
 .store_wrap .quickService figure,.store_wrap .open_store figure{text-align: center;}
@@ -124,6 +125,7 @@ address, em{font-style: normal;}
 .news_wrap ul li:first-child{padding: 0; background: none;margin-bottom: 30px;}
 .news_wrap ul li:first-child span{font-size: 15px; font-weight: bold;}
 .news_wrap ul li{padding: 2px 0 ;width: 260px;padding-left: 8px; background: url("../images/main/bullet_news.png") 0 50% no-repeat;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.news_wrap ul li p{display: none;}
 .news_wrap .news_more{position: absolute;top:0;right:0;}
 #quick_wrap {background-color: #fafafa;border-top: 1px solid #d6d6d6;}
 #quick_wrap .quick_wrap_in{padding: 28px 24px 28px 11%;background: url("../images/common/img_q.png") 2% 50% no-repeat;}
@@ -141,21 +143,22 @@ address, em{font-style: normal;}
 #footer>div p,#footer>div address{font-size: 12px;}
 #footer>p{position: absolute;top: 0;right: 13px;}
 #footer_wrapMb{display: none;}
+
 @media(max-width:1024px){
-  #idx_section_1{background: none !important;position: initial;}
+#idx_section_1{background: none !important;position: initial;}
 .visual_wrapMb{width: 500%;}
 .visual_wrapMb li{width: 20%;max-height: 800px;}
 #idx_section_1 .frameMb{position: relative;}
-  .visual_wrapMb{position: relative;}
-  #wrap #header_wrap{height: 75px;}
-  #header_wrap .header,#header_wrap .subMenu_wrap,#header_wrap .subMenu_wrap h3,.store_wrap .open_store,#footer_wrap,#idx_section_1 .idx_section_1_in .frame,#quick_wrap{display: none;}
-  #header_wrap .mbHeader{display: block;position: relative;}
-  #header_wrap .mbHeader h1{position: absolute;top: 11px; left: 13px;}
-  #header_wrap .mbHeader .mbUtil{position: absolute;top: 16px;right:0;width: 250px;}
-  #header_wrap .mbHeader .mbUtil ul li {float: left;margin-left: 15px;text-align: center;}
-  #header_wrap .mbHeader .mbUtil ul li:first-child+li+li+li{margin-top: 5px;}
-   #header_wrap .mbHeader .mbUtil span{height: 50px;}
-  #container{padding-top: 75px;}
+.visual_wrapMb{position: relative;}
+#wrap #header_wrap{height: 75px;}
+#header_wrap .header,#header_wrap .subMenu_wrap,#header_wrap .subMenu_wrap h3,.store_wrap .open_store,#footer_wrap,#idx_section_1 .idx_section_1_in .frame,#quick_wrap{display: none;}
+#header_wrap .mbHeader{display: block;position: relative;}
+#header_wrap .mbHeader h1{position: absolute;top: 11px; left: 13px;}
+#header_wrap .mbHeader .mbUtil{position: absolute;top: 16px;right:0;width: 250px;}
+#header_wrap .mbHeader .mbUtil ul li {float: left;margin-left: 15px;text-align: center;}
+#header_wrap .mbHeader .mbUtil ul li:first-child+li+li+li{margin-top: 5px;}
+#header_wrap .mbHeader .mbUtil span{height: 50px;}
+#container{padding-top: 75px;}
 #idx_section_1 .frameMb{display: block;overflow: hidden;margin: 0 auto; width: 100%;}
 #idx_section_1 .frameMb .visual_wrapMb img{width: 100%;}
 #idx_section_2 .idx_section_2_in .newMenu_wrap{margin-bottom: 37px;}
@@ -169,9 +172,9 @@ address, em{font-style: normal;}
 .idx_section_3_in ul li:first-child,.idx_section_3_in ul li:first-child+li{margin-bottom: 60px;}
 .idx_section_3_in ul li:first-child+li+li,.idx_section_3_in ul li:first-child+li+li+li{width: 50%;}
 .idx_section_3_in ul li:before{content:""; background: url("../images/main/bullet_st3.png") 0 0 no-repeat;width: 32px; height: 3px;position: absolute;top:-20px; left:46%;}
-.water_spc_wrap{padding: 0 15%;}
-.water_spc_wrap .water_wrap,.water_spc_wrap .specialy_wrap{float: left;}
-.store_wrap .quickService{margin: 0;}
+.water_spc_wrap{margin:0;padding: 0 7% 0 19%;}
+.water_spc_wrap .water_wrap,.water_spc_wrap .specialy_wrap{float: left;width: 50%;}
+.store_wrap .quickService{margin: 0;border-bottom: 1px solid #d6d6d6;border-top: 1px solid #d6d6d6;padding: 15px 0;}
 .store_wrap .quickService ul{margin: 0 auto;width: 90%;}
 .store_wrap .quickService ul li{width: 25%;padding: 0; margin: 0;}
 .store_wrap .inp_sch{position: relative;}
@@ -188,6 +191,21 @@ address, em{font-style: normal;}
 #footerMb>div address{margin-bottom: 5px;}
 #footerMb>div p,#footerMb>div address{font-size: 12px;text-align: center;padding: 2px 0 ;}
 .abbr_wrap{padding: 10px;}
+.frame_mall{width: 527px;margin:0 auto;}
+.water_spc_wrap,.mall_wrap{margin-bottom: 37px !important;}
+.news_wrap ul li:first-child{padding:8px 0 8px 8px;width: 100%; background: url("../images/main/bullet_news.png") 0 50% no-repeat;margin-bottom: 0;}
+.news_wrap ul li:first-child span{font-size: 14px; font-weight: normal;}
+.news_wrap ul li{width: 100%;padding: 8px 0 8px 8px;border-bottom: 1px solid #d6d6d6;position: relative;}
+.news_wrap h3{border: none;margin-bottom: -5px;}
+.news_wrap ul li a{display: block;width: 70%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden}
+.news_wrap ul li em{display: none}
+.news_wrap ul li p{display: block;position: absolute;top: 10px;right: 5px;color: #666;font-size: 12px;}
+
+}
+@media (max-width:766px) {
+.water_spc_wrapaa{margin: 0 auto;}
+.water_spc_wrap .water_wrap,.water_spc_wrap .specialy_wrap{width: 100%;}
+.water_spc_wrap{padding: 0 15% 0 32%}
 
 }
 @media (max-width:640px) {
@@ -195,6 +213,10 @@ address, em{font-style: normal;}
 .idx_section_3_in ul li{float: left;text-align: center;margin: 0;position: relative;width: 100%;margin-bottom: 60px;}
 .idx_section_3_in ul li:first-child+li+li,.idx_section_3_in ul li:first-child+li+li+li{width: 100%;}
 .idx_section_3_in ul li:before{content:""; background: url("../images/main/bullet_st3.png") 0 0 no-repeat;width: 32px; height: 3px;position: absolute;top:-20px; left:46%;}
+.water_spc_wrap{padding: 0 15% 0 30%;}
+}
+@media (max-width:500px) {
+.water_spc_wrap{padding: 0 3% 0 17%;}
 }
 /*반응형 12컬럼*/
 @media (max-width:1024px) {

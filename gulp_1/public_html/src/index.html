@@ -2,10 +2,10 @@
 <title>EDIYA</title>
 <script type="text/javascript">
 	var init = function(){
-	var pageBtn = document.querySelectorAll(".sliderBannerPage button");
+	var pageBtn = document.querySelectorAll("#idx_section_1 .frame .sliderBannerPage button");
 	var mallBtn = document.querySelectorAll(".mallBtn button");
 	var activePaging = 0;
-	var sUl = document.querySelector("#idx_section_1 .frame ul");
+	var sUl = document.querySelector("#idx_section_1 .frame ul.visual_wrapPc");
 	var mallUl = document.querySelector(".frame_mall .mall_wrap_in");
 	//var storeFi = document.querySelecor(".open_store_imgWrap figure")
 	var imgWidth = 1200;
@@ -32,7 +32,6 @@
 	var showNumMa = 0;
 	/*이미지슬라이드 스크립트*/
 	var playRolling = function(wrap,action_a,action_b,num){
-
 		addEvent(wrap, "mouseenter",function(){ //마우스벗어났을때 사진움직이기
 			clearInterval(action_a);
 		})
@@ -172,15 +171,15 @@
 		<!-- 비쥬얼영역 -->
 		<section id="idx_section_1">
 				<h3 class="blind">메인이미지</h3>
-				<div class="frame">
-					<ul class="visual_wrap clearFix">
-						<li class="visual_img_1"><a href="#"><img src="images/main/img_visual_1.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_2"><a href="#"><img src="images/main/img_visual_2.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_3"><a href="#"><img src="images/main/img_visual_3.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_4"><a href="#"><img src="images/main/img_visual_4.png" alt="비쥬얼이미지1"></a></li>
-						<li class="visual_img_5"><a href="#"><img src="images/main/img_visual_5.png" alt="비쥬얼이미지1"></a></li>
-					</ul>
-				</div>
+				<div class="idx_section_1_in">
+					<div class="frame">
+						<ul class="visual_wrapPc clearFix">
+							<li class="visual_img_1"><a href="#"><img src="images/main/img_visual_1.png" alt="비쥬얼이미지1"></a></li>
+							<li class="visual_img_2"><a href="#"><img src="images/main/img_visual_2.png" alt="비쥬얼이미지1"></a></li>
+							<li class="visual_img_3"><a href="#"><img src="images/main/img_visual_3.png" alt="비쥬얼이미지1"></a></li>
+							<li class="visual_img_4"><a href="#"><img src="images/main/img_visual_4.png" alt="비쥬얼이미지1"></a></li>
+							<li class="visual_img_5"><a href="#"><img src="images/main/img_visual_5.png" alt="비쥬얼이미지1"></a></li>
+						</ul>
 					<p class="sliderBannerPage">
 						<button class="on"><span>버튼1</span></button>
 						<button><span>버튼2</span></button>
@@ -188,12 +187,31 @@
 						<button><span>버튼4</span></button>
 						<button><span>버튼5</span></button>
 					</p>
+					</div>
+					<div class="frameMb">
+						<ul class="visual_wrapMb clearFix">
+							<li><a href="#"><img src="images/main/img_visualMb_1.jpg" alt="비쥬얼이미지1"></a></li>
+							<li><a href="#"><img src="images/main/img_visualMb_2.jpg" alt="비쥬얼이미지1"></a></li>
+							<li><a href="#"><img src="images/main/img_visualMb_3.jpg" alt="비쥬얼이미지1"></a></li>
+							<li><a href="#"><img src="images/main/img_visualMb_4.jpg" alt="비쥬얼이미지1"></a></li>
+							<li><a href="#"><img src="images/main/img_visualMb_5.jpg" alt="비쥬얼이미지1"></a></li>
+						</ul>
+					<p class="sliderBannerPage">
+						<button class="on"><span>버튼1</span></button>
+						<button><span>버튼2</span></button>
+						<button><span>버튼3</span></button>
+						<button><span>버튼4</span></button>
+						<button><span>버튼5</span></button>
+					</p>
+					</div>
+					
+				</div>
 		</section>
 		<!-- //비쥬얼영역 -->
 		<!-- 신메뉴/매장찾기영역 -->
 		<section id="idx_section_2">
 			<div class="idx_section_2_in clearFix">
-				<div class="newMenu_wrap">
+				<div class="newMenu_wrap col_tablet_12">
 					<h3><img src="images/main/title_newMenu.png" alt="신메뉴소개"></h3>
 					<div class="frame_newMenu">
 						<ul class = "clearFix">
@@ -205,8 +223,12 @@
 						<button class="on"><span>첫번째이미지보기</span></button>
 						<button><span>두번째이미지보기</span></button>
 					</p>
+					<p class="sliderBannerPage">
+						<button class="on"><span>버튼1</span></button>
+						<button><span>버튼2</span></button>
+					</p>
 				</div>
-				<div class="store_wrap">
+				<div class="store_wrap col_tablet_12">
 					<h3><img src="images/main/title_f_s.png" alt="매장찾기">
 					<span>
 						<input type="radio" name="s_store" id="all_store" checked=""><label for="all_store">전체매장</label>
@@ -217,7 +239,7 @@
 					<form action="#" method="get">
 						<fieldset>
 						<legend>매장검색</legend>
-							<p>
+							<p class="inp_sch">
 								<input type="text" name="sch_store" id="sch_store" placeholder="찾고자하는 매장명을 입력해주세요" title="찾고자하는 매장명을 입력해주세요"><input type="image" src="images/main/btn_sch.png" alt="매장검색버튼">
 							</p>
 						</fieldset>
@@ -297,12 +319,12 @@
 			<div class="idx_section_3_in">
 				<ul class="clearFix">
 					<li>
-						<h4>브랜드소개</h4>
+						<h4><a href="ediyacoffee.html">브랜드소개</a></h4>
 						<a href="ediyacoffee.html"><img src="images/main/logo_st3.png" alt="브랜드소개"></a>
 						<p>진심을 담은 커피, 커피한잔의 행복<br/>이디야커피를 소개합니다.</p>
 					</li>
 					<li>
-						<h4>가맹점 개설안내</h4>
+						<h4><a href="franchise.html">가맹점 개설안내</a></h4>
 						<a href="franchise.html"><img src="images/main/img_frc_sc3.png" alt="가맹점 개설안내"></a>
 						<p>본사가 운영하는 노하우와 매뉴얼을<br/>바탕으로 창업의 꿈을 실현하자!</p>
 					</li>
@@ -327,7 +349,7 @@
 		<!-- 이디야몰 영역 -->
 		<section id="idx_section_4">
 			<div class="idx_section_4_in clearFix">
-				<div class="mall_wrap clearFix">
+				<div class="mall_wrap clearFix col_tablet_12">
 					<h3><img src="images/main/title_mall.png" alt="이디야몰"></h3>
 					<div class="frame_mall">
 						<ul class="mall_wrap_in">
@@ -423,27 +445,28 @@
 						<button><span>세번째이미지보기</span></button>
 					</p>
 				</div>
-				<div class="water_spc_wrap">
-					<div class="water_wrap">
+				<div class="water_spc_wrap col_tablet_12">
+					<div class="water_wrap col_tablet_6 col_mobile_12">
 						<h4>이디야워터</h4>
 						<p>맑고 깨끗한 이디야 워터!<br/>매장에서 만나보세요</p>
 						<p><a href="#"><img src="images/main/more_water.png" alt="이디야워터바로가기"></a></p>
 					</div>
-					<div class="specialy_wrap">
+					<div class="specialy_wrap col_tablet_6 col_mobile_12">
 						<h4>가장 특별한 연구소</h4>
 						<p>더 좋은 커피를 향한 혼신의 노력,<br/>오직 커피만을 향한<br/>이디야의 열정</p>
 						<p><a href="ediyacoffeelab.html"><img src="images/main/more_specialy.png" alt="이디야워터바로가기"></a></p>
 					</div>
 				</div>
-				 <div class="news_wrap">
-				 	<h3><img src="images/main/title_news.png" alt="공지사항"></h3>
+				 <div class="news_wrap col_tablet_12 col_mobile_12">
+				 	<h3><img src="images/main/title_news.png" alt="공 지사항"></h3>
 				 	<ul>
-				 		<li><a href="#"><span>이디야, 겨울한정메뉴 ‘피칸 초콜릿','티라미수 라떼' 판매</span><br/>대한민국 대표 커피브랜드 이디야커피에서 겨울한정메뉴로 피칸초콜릿과 티라메수 라떼를 선보입니다.</a></li>
-				 		<li><a href="#">[이디야커피] 신한카드와 MOU 체결</a></li>
-				 		<li><a href="#">[이디야커피] 종로학원하늘교육과 MOU 체결</a></li>
-				 		<li><a href="#">[이디야커피] 가맹점 수 최다, 압도적1위(한국공정거래조정원 관련기사)</a></li>
-				 		<li><a href="#">[이디야커피] 디저트 신메뉴 2종 ‘에끌레어''페스트리 슈'출시</a></li>
-				 		<li><a href="#">[이디야커피] 2000호점 돌파!</a></li>
+				 		<li><a href="#"><span>[이디야커피] 겨울한정메뉴 ‘피칸 초콜릿','티라미수 라떼' 판매</span><br/><em>대한민국 대표 커피브랜드 이디야커피에서 겨울한정메뉴로 피칸초콜릿과 티라메수 라떼를 선보입니다.</em>
+				 		<p>2016.12.20</p></a></li>
+				 		<li><a href="#">[이디야커피] 신한카드와 MOU 체결</a><p>2016.12.20</p></li>
+				 		<li><a href="#">[이디야커피] 종로학원하늘교육과 MOU 체결</a><p>2016.12.20</p></li>
+				 		<li><a href="#">[이디야커피] 가맹점 수 최다, 압도적1위(한국공정거래조정원 관련기사)</a><p>2016.12.20</p></li>
+				 		<li><a href="#">[이디야커피] 디저트 신메뉴 2종 ‘에끌레어''페스트리 슈'출시</a><p>2016.12.20</p></li>
+				 		<li><a href="#">[이디야커피] 2000호점 돌파!</a><p>2016.12.20</p></li>
 				 	</ul>
 				 	<p class="news_more"><a href="news.html"><img src="images/main/more_news.png" alt="공지사항더보기"></a></p>
 				 </div>
