@@ -75,11 +75,21 @@
         text-align: center; }
 
 @media (max-width: 1024px) {
+  .academy_top dl dt{
+    padding-top: 0;
+      }
   .academy_top dl {
-    background-position: center; }
-  .academy_top dl dt, .academy_top dl dd {
-    display: none; } }
-
+    background: url(../images/academy/academy_main2.png) 0 0 no-repeat;
+    padding-bottom: 40px;
+   }
+    .academy_top dl dd + dd{
+      display: none;
+    }
+    .academy_top dl{
+      height: inherit;
+      padding-left: 160px;
+    }
+  }
 @media (max-width: 640px) {
   .academy_top dl {
     display: none; }
