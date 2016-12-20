@@ -182,7 +182,10 @@
 }
 @media (max-width: 640px) {
   .faq_wrap h2 {
-    font-size: 14px; }
+    padding-left: 18px;
+    font-size: 14px;
+    background-size: 13px;
+    background-position: 0 5px; }
   .faq_wrap .form_title {
     display: none; }
   .faq_form {

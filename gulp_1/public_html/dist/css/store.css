@@ -191,8 +191,11 @@
   .map_wrap .store_form #store_search + label a {
     margin-bottom: 30px; }
   .search_tit {
-    padding-left: 60px;
-    background: url(../images/common/icon_circle.png) 30px 2px no-repeat; }
+    font-size: 16px;
+    background-size: 13px;
+    background-position: 20px 3px;
+    padding-left: 45px;
+ }
   .map_wrap .store_form li span {
     margin-right: 5px; }
   .map_wrap .store_form .store_positon_1 select {

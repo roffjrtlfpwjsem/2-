@@ -109,7 +109,9 @@ form ul {
 
 .mobliedate {
   display: none; }
-
+.mobile_tit{
+  display: none;
+}
 @media (max-width: 640px) {
   form p {
     display: none; }
@@ -132,6 +134,22 @@ form ul {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+    table tbody tr td + td{
+      border-left: none;
+      border-right: none;
+    }
+    table thead tr th + th{
+      border-left: none;
+      border-right: none;
+      position: relative;
+      padding-right: 100px;
+    }
+    .mobile_tit{
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      right: 25px;
     }
   table tbody tr td + td {
     position: relative;
