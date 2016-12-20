@@ -97,7 +97,9 @@
     font-size: 22px;
     line-height: 50px; }
   #contents_wrap h3 {
-    height: 100px; }
+    height: 100px;
+		margin-bottom:45px;
+		}
     #contents_wrap h3 span {
       font-size: 28px;
       line-height: 100px; } }
@@ -111,7 +113,10 @@
   .lnb_2 li {
     width: 100%; }
   #contents_wrap h3 {
-    height: 80px; }
-    #contents_wrap h3 span {
-      font-size: 20px;
-      line-height: 80px; } }
+    height: 80px; 
+    margin-bottom: 30px;		
+		}
+	#contents_wrap h3 span {
+		font-size: 20px;
+		line-height: 80px; } 
+}

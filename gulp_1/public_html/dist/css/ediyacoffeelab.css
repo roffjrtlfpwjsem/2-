@@ -30,15 +30,15 @@
 
 .lab_list {
   margin-top: 50px;
-  overflow: hidden; }
+}
   .lab_list li {
     position: relative;
     float: left;
     width: 33.33%;
-    padding-left: 30px;
+    padding:0 10px 0 30px;
     font-size: 18px;
     color: #13245e;
-    font-weight: bold; }
+    font-weight: 900; }
     .lab_list li img {
       width: 100%;
       max-width: 172px;
@@ -48,25 +48,92 @@
       top: 40%;
       left: 135px;
       width: 42%; }
-
-.lab_tit {
+.lab_logo_wrap{
+	padding:50px 30px;
+}
+.lab_logo_wrap .lab_tit {
   padding-left: 25px;
-  margin-left: 50px;
   color: #333333;
   font-size: 18px;
   font-weight: bold;
   height: 30px;
   line-height: 30px;
+	text-align:left;
   background: url(../images/common/icon_circle.png) 0 5px no-repeat; }
-
-.pl50 {
+.lab_logo_wrap dd{
+	text-align:center;
+	margin:15px 0 20px;
+}
+.lab_logo_wrap img{
+	width:100%;
+	max-width:730px;
+}
+.lab_logo_wrap .lab_logo{
   color: #13245e;
   font-size: 24px;
-  font-weight: bold;
-  padding: 50px; }
-  .pl50 span {
-    display: block;
-    margin-top: 15px;
-    color: #333333;
+  font-weight: 900;
+}
+.lab_logo_wrap .lab_logo .lab_logo_txt {
+	color: #333333;
+	font-size: 14px;
+	font-weight: normal; 
+	text-align:left;
+}
+
+@media (max-width:1024px){
+  .main_visual_wrap h4 {
+		top:18%;
     font-size: 18px;
-    font-weight: normal; }
+	}
+	.main_visual_wrap p {
+		top:55%;
+    font-size: 14px;
+		line-height:20px;
+	}	
+  .lab_list li {
+		font-size:16px;
+	}
+	.lab_list li img {
+		width: 80%;
+	}
+	.lab_list li span {
+		top: 38%;
+		left: 55%;
+	}
+}
+@media (max-width:640px){
+  .main_visual_wrap{
+	display:none;
+	}
+	.lab_list{
+		margin-top:-20px;
+	}
+	.lab_list li {
+		width:100%;
+		font-size:14px;
+		margin-top:20px;
+	}
+	.lab_list li img {
+		width: 30%;
+	}
+	.lab_list li span {
+		top:25%;
+		left:40%;
+	}
+	.lab_logo_wrap{
+		padding-left:0;
+		padding-right:0;
+	}
+	.lab_logo_wrap .lab_logo{
+		font-size:20px;
+	}
+	.lab_logo_wrap .lab_logo .lab_logo_txt {
+		display:none;
+	}
+	.lab_logo_wrap .lab_tit {
+		padding-left: 15px;
+		font-size: 16px;
+		background-size:13px;
+		background-position:0 7px;
+		}
+}
