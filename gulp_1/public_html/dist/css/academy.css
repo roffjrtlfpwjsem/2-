@@ -91,6 +91,12 @@
     }
   }
 @media (max-width: 640px) {
+  .academy_table h2{
+    padding-left: 20px;
+    font-size: 16px;
+    background-size: 13px;
+    background-position: 0 3px;
+  }
   .academy_top dl {
     display: none; }
     .academy_table table thead th:first-child,.academy_table table tbody td:first-child{
