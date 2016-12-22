@@ -7,13 +7,15 @@
 .login_wrap {width: 95%;border-left: 1px solid #d6d6d6;border-right: 1px solid #d6d6d6;border-bottom: 1px solid #d6d6d6;border-top: 1px solid #000;margin: 0 auto 73px;padding: 40px 5.52% 55px 9.56%;
 background: url("../images/login/c_line_login.png") 52% center no-repeat; }
 .login_wrap form {float: left; width: 50%;}
-.login_wrap .login_wrap_in1 {float: left;width: 100%;padding-top: 62px;position: relative; }
-.login_wrap .login_wrap_in1 p:first-child {font-size: 20px; font-weight: 800;margin: 0 0 18px -20px;letter-spacing: -2px; }
-.login_wrap .login_wrap_in1 input[type=text], .login_wrap .login_wrap_in1 input[type=password] {width: 300px;padding: 5px 10px;border: 1px solid #d6d6d6; }
-.login_wrap .login_wrap_in1 p.login_btn {position: absolute;top: 104px;left: 305px; }
-.login_wrap .login_wrap_in1 .q_join_wrap{position: relative;padding-top: 30px;}
-.login_wrap .login_wrap_in1 .q_join_wrap .login_join_wrap{ position: absolute;top:27px;right:17%;}
-.login_wrap .login_wrap_in1 .q_join_wrap .login_join_wrap span {margin-right: 10px; }
+.login_wrap .login_wrap_in1 {width: 100%;padding: 62px 19% 0 0;position: relative; }
+.login_wrap .login_wrap_in1>p:first-child {font-size: 20px; font-weight: 800;margin: 0 0 18px -20px;letter-spacing: -2px; }
+.login_wrap .login_wrap_in1 p:first-child+div{position: relative;}
+.login_wrap .login_wrap_in1 p:first-child+div .inp_join_wrap{padding-right: 87px;}
+.login_wrap .login_wrap_in1 input[type=text], .login_wrap .login_wrap_in1 input[type=password] {width: 100%;padding: 5px 10px;border: 1px solid #d6d6d6; }
+.login_wrap .login_wrap_in1 input[type=image]{height: 65px;width: 82px;}
+.login_wrap .login_wrap_in1 p.login_btn {position: absolute;top:-2px; right:0;}
+.login_wrap .q_join_wrap {margin-bottom: 37px; position: relative;width: 100%;padding-top: 20px;}
+.login_wrap .q_join_wrap .login_join_wrap{position: absolute;top: 17px;right: 95px;}
 .login_wrap .pb_5 {padding-bottom: 5px; }
 .login_wrap .login_wrap_in2 {background: url("../images/login/dashed_line.png") 0 154px no-repeat;float: right;width: 46%;padding-top: 13px; }
 .login_wrap .login_wrap_in2 div {padding-left: 129px; }
@@ -27,47 +29,29 @@ background: url("../images/login/c_line_login.png") 52% center no-repeat; }
 .cv_wrap_log h4:first-child+h4{display: none}
 .cv_wrap_log p {line-height: 22px; }
 .cv_wrap_log p > strong {font-weight: 800; }
-@media(max-width:1024px){
-.login_wrap{background: none;padding-top: 0;}
-.login_wrap form {width: 100%;margin-bottom: 10px;}
-.login_wrap .login_wrap_in1{width: 100%;margin-bottom: 37px;}
-.login_wrap .login_wrap_in1 p:first-child{font-size:16px;text-align: center;}
-.login_wrap .login_wrap_in1 input[type=text],.login_wrap .login_wrap_in1 input[type=password]{width: 87%;}
-.login_wrap .login_wrap_in1 p.login_btn{left:initial; right:0;top:97px;}
-.login_wrap .login_wrap_in1 .q_join_wrap .login_join_wrap{right:0;}
-.login_wrap .login_wrap_in1 .q_join_wrap .login_join_wrap span,.login_wrap .login_wrap_in1 label{font-size: 12px;}
-.login_wrap .login_wrap_in2{width: 100%;background: none;}
-.login_wrap .login_wrap_in2 div.findId{border-bottom: 1px dashed #d6d6d6;margin: 0;padding-bottom: 40px;font-size: 12px;padding-left: 110px;background-position: 30px 13px}
-.login_wrap .login_wrap_in2 div.findPw{padding-top: 40px;background-position: 30px 50px;font-size: 12px;padding-left: 110px}
-.login_wrap .login_wrap_in2 h4{font-size: 14px;}
-.cv_wrap_log h4:first-child+h4{display:none;}
-}         
-@media(max-width:640px){
-.login_wrap .login_wrap_in1 .q_join_wrap .login_join_wrap span{display: block}
-#contents_wrap .cv_wrap_log{background: none;padding: 10%;}
-#contents_wrap .cv_wrap_log h4:first-child{display: none}
-#contents_wrap .cv_wrap_log h4:first-child+h4{display: block;margin-bottom: 10px;}
-}
+.login_wrap .q_join_wrap {margin-bottom: 37px;}
+
 /*//LOGIN*/
 /*join*/
 .step_join {width: 95%;margin: 0 auto 86px; }
+.step_join ul{width: 100%}
+
 .step_join ul>li>img{width: 100%;}
-  .step_join li { float: left; position: relative;padding-left: 40px; }
+  .step_join li { float: left; position: relative;padding-left: 40px; width: 25%;}
     .step_join li:after { content: url("../images/join/arrow_join.png");
       display: inline-block;
-      width: 40px;
+      width: 15%;
       height: 46px;
       position: absolute;
-      top: 9px;
-      left: 265px; }
-    .step_join li:first-child {
-      padding: 0; }
+      top: 8%;
+      left: 103%;}
     .step_join li:first-child + li:after {
-      left: 305px; }
+      left: 103%; }
     .step_join li:first-child + li + li:after {
-      left: 305px; }
+      left: 103%;}
     .step_join li:first-child + li + li + li:after {
-      content: none; }
+      content: none; ;}
+
 
 .join_wrap {
   width: 95%;
@@ -76,7 +60,7 @@ background: url("../images/login/c_line_login.png") 52% center no-repeat; }
   border-bottom: 1px solid #d6d6d6;
   border-top: 1px solid #000;
   margin: 0 auto;
-  padding: 60px 139px 40px 180px;
+  padding: 60px 0;
   position: relative;
   background: url("../images/login/c_line_login.png") center center no-repeat; }
   .join_wrap h4 {
@@ -87,23 +71,25 @@ background: url("../images/login/c_line_login.png") 52% center no-repeat; }
     padding-top: 10px; }
   .join_wrap .ph_sign_wrap {
     float: left;
-    width: 219px;
+    width: 50%;
     height: 234px;
-    text-align: center; }
+    text-align: center;
+    padding: 0 1%; }
     .join_wrap .ph_sign_wrap img {
       margin-bottom: 25px; }
   .join_wrap .ip_sign_wrap {
     padding-top: 10px;
     float: right;
-    width: 320px;
+    width: 50%;
     height: 234px;
-    text-align: center; }
+    text-align: center; 
+  padding: 0 1%;}
     .join_wrap .ip_sign_wrap img {
-      margin-bottom: 36px; }
+      margin-bottom: 41px; }
   .join_wrap p.bntPrev_join {
     width: 100%;
     position: absolute;
-    top: 390px;
+    top: 410px;
     left: 0;
     text-align: center; }
 
@@ -114,10 +100,9 @@ background: url("../images/login/c_line_login.png") 52% center no-repeat; }
   margin: 0 auto 140px;
   border: 1px solid #d6d6d6;
   width: 95%;
-  padding: 52px 200px 44px 225px;
+  padding: 52px 0 44px 225px;
   background: url("../images/join/img_sign.png") 84px 65px no-repeat; }
-  .sign_wrap_jo h4 {
-    margin-bottom: 20px; }
+  .sign_wrap_jo h4 {margin-bottom: 20px;font-size: 18px; color: #13245E;font-weight: 800; }
   .sign_wrap_jo p {
     line-height: 22px; }
     .sign_wrap_jo p > strong {
@@ -126,5 +111,37 @@ background: url("../images/login/c_line_login.png") 52% center no-repeat; }
 
 .mb_10 {
   margin-bottom: 10px; }
-
 /*//join*/
+
+
+@media(max-width:1024px){
+.login_wrap{background: none;padding:0 7% 55px}
+.login_wrap form {width: 100%;margin-bottom: 10px;}
+.login_wrap .login_wrap_in1{width: 100%;padding: 62px 0 0 0 ;float: none;}
+.login_wrap .login_wrap_in1>p:first-child{font-size:16px;text-align: center;margin-left: 0;}
+.login_wrap .login_wrap_in1 .login_join_wrap{right:0;}
+.login_wrap .login_wrap_in1 .login_join_wrap span,.login_wrap .login_wrap_in1 label{font-size: 12px;}
+.login_wrap .login_wrap_in2{width: 100%;background: none;}
+.login_wrap .login_wrap_in2 div.findId{border-bottom: 1px dashed #d6d6d6;margin: 0;padding-bottom: 40px;font-size: 12px;padding-left: 85px;background-position: 8px 13px}
+.login_wrap .login_wrap_in2 div.findPw{padding-top: 40px;background-position: 8px 50px;font-size: 12px;padding-left: 85px}
+.login_wrap .login_wrap_in2 h4,.ph_sign_wrap h4,.ip_sign_wrap h4{font-size: 14px;}
+.cv_wrap_log h4:first-child+h4{display:none;}
+.login_wrap .q_join_wrap,.ph_sign_wrap p,.ip_sign_wrap p,.commend_join{font-size: 12px;}
+.login_wrap .q_join_wrap .login_join_wrap{right: 10px;top:14px;}
+
+.commend_join{padding: 8px 5% 176px;}
+.step_join{display: none;}
+ .join_wrap{padding: 40px 0;}
+ .sign_wrap_jo {background: none;padding:10% ;}
+.sign_wrap_jo h4 {margin-bottom: 20px;font-size: 16px;}
+.sign_wrap_jo p,.sign_wrap_jo p strong{;font-size: 14px;}
+.join_wrap .ip_sign_wrap img{margin-bottom: 40px;}
+}         
+@media(max-width:640px){
+  .login_wrap{padding:0 5% 55px}
+.login_wrap .login_wrap_in1 .login_join_wrap span{display: block}
+#contents_wrap .cv_wrap_log{background: none;padding: 10%;}
+#contents_wrap .cv_wrap_log h4:first-child{display: none}
+#contents_wrap .cv_wrap_log h4:first-child+h4{display: block;margin-bottom: 10px;}
+.login_wrap .q_join_wrap .login_join_wrap span{display: block;}
+}

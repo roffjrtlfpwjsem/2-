@@ -1,30 +1,24 @@
-#visual {
-  background: url("../images/ediyacoffee/ediyacoffee_title_bg.jpg") center 0 no-repeat; }
+#visual {background: url("../images/ediyacoffee/ediyacoffee_title_bg.jpg") center 0 no-repeat; }
+.map_wrap {width: 100%;text-align: center; padding-bottom: 60px; }
 
-.map_wrap {
-  width: 1200px;
-  text-align: center;
-  padding-bottom: 60px; }
+.map_wrap img{width: 80.08%;min-width: 320px}
+.addr_wrap_fs {width: 96%; margin: 0 auto;}
+.addr_wrap_fs h4 { padding: 0 0 28px 21px; }
+.addr_wrap_fs dl {border-bottom: 1px solid #dfdfdf; }
+.addr_wrap_fs dl dt {float: left;padding: 23px 0 23px 54px;font-size: 16px;font-weight: 800;width: 10%;background: url("../images/findStore/icon_addr.png") 15px center no-repeat; }
+.addr_wrap_fs dl dd{float: left;width: 90%; padding: 23px 10px;}
+.addr_wrap_fs .abbr_fs {border-top: 1px solid #000; }
+.addr_wrap_fs .ph_fs dt {background-image: url("../images/findStore/icon_phone.png"); }
+.addr_wrap_fs .ph_fs span { margin-left: 21px; }
+.addr_wrap_fs .bus_fs dt {background-image: url("../images/findStore/icon_bus.png"); }
+@media(max-width:1024px){
+.addr_wrap_fs h4 { padding: 0 0 10px 21px; }
+.addr_wrap_fs dl dt{font-size: 14px;background-position: 0 center;padding: 23px 0 23px 4%;width: 15%;}
+.addr_wrap_fs dl dd{font-size: 12px;width: 85%;}
+.addr_wrap_fs dl.bus_fs dd span{display: block;}
+.addr_wrap_fs dl dt,.addr_wrap_fs .ph_fs dt,.addr_wrap_fs .bus_fs dt{padding: 23px 0 23px 5%;}
 
-.addr_wrap_fs {
-  width: 96%; }
-  .addr_wrap_fs h4 {
-    padding: 0 0 28px 21px; }
-  .addr_wrap_fs dl {
-    border-bottom: 1px solid #dfdfdf; }
-    .addr_wrap_fs dl dt, .addr_wrap_fs dl dd {
-      float: left;
-      padding: 23px 0; }
-    .addr_wrap_fs dl dt {
-      font-size: 16px;
-      font-weight: 800;
-      padding: 23px 30px 23px 60px;
-      background: url("../images/findStore/icon_addr.png") 15px center no-repeat; }
-  .addr_wrap_fs .abbr_fs {
-    border-top: 1px solid #000; }
-  .addr_wrap_fs .ph_fs dt {
-    background-image: url("../images/findStore/icon_phone.png"); }
-  .addr_wrap_fs .ph_fs span {
-    margin-left: 21px; }
-  .addr_wrap_fs .bus_fs dt {
-    background-image: url("../images/findStore/icon_bus.png"); }
+}
+@media(max-width:640px){
+.addr_wrap_fs dl dt,.addr_wrap_fs .ph_fs dt,.addr_wrap_fs .bus_fs dt{background: none;}
+}

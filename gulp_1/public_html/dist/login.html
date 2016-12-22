@@ -31,6 +31,7 @@
 						inp_pw.value="";
 						inp_pw.focus();
 					}
+					return false;
 				}
 				if(inp_id.value == id_1){
 					if(inp_pw.value != pw_1){
@@ -76,19 +77,26 @@
 					<form action="#" method="post">
 						<fieldset>
 						<legend>이디야로그인</legend>
-							<div class="login_wrap_in1">
+							<div class="login_wrap_in1 clearFix">
 								<p>이디야 서비스 이용을 위해 로그인을 해주세요.</p>
-								<p class="pb_5"><input type="text" name="user_id" id="user_id" placeholder="이메일아이디입력" title="이메일아이디를 입력해주세요"></p>
-								<p class="pb_5"><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호입력" title="비밀번호를 입력해주세요"></p>
-								<p class="login_btn"><input type="image" src="images/login/btn_login.png" alt="로그인버튼"></p>
-								<p class="q_join_wrap">
-									<input type="checkbox" name="save_id" id="save_id"><label for="save_id">아이디저장</label>
-									<span class="login_join_wrap">
-										<span>아직 회원이 아니신가요?</span>
-										<a href="join.html"><img src="images/login/btn_join.png" alt="회원가입버튼"></a>
-									</span>
-								</p>
+								<div>
+									<div class="inp_join_wrap">
+										<p class="pb_5"><input type="text" name="user_id" id="user_id" placeholder="이메일아이디입력" title="이메일아이디를 입력해주세요"></p>
+										<p class="pb_5"><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호입력" title="비밀번호를 입력해주세요"></p>
+									</div>
+									<p class="login_btn">
+											<input type="image" src="images/login/btn_login.png" alt="로그인버튼">
+									</p>
+								</div>
 							</div>
+							<div class="q_join_wrap">
+								<input type="checkbox" name="save_id" id="save_id"><label for="save_id">아이디저장</label>
+								<span class="login_join_wrap">
+									<span>아직 회원이 아니신가요?</span>
+									<a href="join.html"><img src="images/login/btn_join.png" alt="회원가입버튼"></a>
+								</span>
+							</div>
+							
 						</fieldset>
 					</form>
 						<div class="login_wrap_in2">
