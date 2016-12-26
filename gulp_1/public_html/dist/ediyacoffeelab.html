@@ -1,6 +1,53 @@
 <? include "inc/top.html"; ?>
 <title>EDIYA 커피연구소</title>
 <link rel="stylesheet" type="text/css" href="css/ediyacoffeelab.css">
+<script type="text/javascript">
+function init(){
+	var scH = function(){
+		var arrImg = document.querySelectorAll(".img_wrap dd a");
+		var detailBg = document.querySelector(".detail_img_wrap .detail_img_bg");
+		var detailWrap = document.querySelector(".detail_img_wrap");
+		var arrDetail = document.querySelectorAll(".detail_img_wrap .detail_img div");
+		var scrollHeight = document.body.scrollTop;
+		var windowHeight = document.body.scrollHeight;
+		var windowWidth = document.body.scrollWidth;
+		var detailImg = document.querySelector(".detail_img");
+		detailBg.style.height = windowHeight + "px";
+		detailImg.style.top = scrollHeight + 100 + "px";
+		for (var i = 0; i < arrImg.length; i++){
+			(function (){
+				var k = i;
+				addEvent(arrImg[i],"click",function(){
+					var menuNum = k;
+					//console.log(menuNum);
+					for (var i = 0; i < arrDetail.length; i++){
+						if (i == menuNum){
+							detailWrap.style.display = "block";
+							arrDetail[i].style.display = "block";
+							if (windowWidth <640){
+								detailBg.style.width = 730 + "px";
+							}
+						}
+					}
+				});
+			}());
+		}
+		addEvent(detailBg,"click",function(){
+			if (detailWrap.style.display == "block"){
+				detailWrap.style.display = "none";
+				for (var i = 0; i < arrDetail.length; i++){
+					arrDetail[i].style.display = "none";
+				}
+			}
+		});
+	}
+	addEvent(window,"scroll",scH);
+}
+
+addEvent(window,"load",init);
+
+
+</script>
 </head>
 <body>
 <div id="wrap">
@@ -52,29 +99,29 @@
 						<span>커피 문화를 선도하는 이디야커피랩</span>
 					</li>
 				</ul>
-				<div class="lab_logo_wrap">
+				<div class="img_wrap">
 					<dl class="lab_logo">
 						<dt>EDIYA COFFEE LAB LOGO</dt>
 						<dd class="lab_logo_txt">
 						EDIYA COFFEE LAB의 로고는 전구의 필라멘트와 LAB(연구소)의 의미를 결합한 디자인으로 번뜩이는 아이디어가 있는 24시간 불이 꺼지지 않는 이디야 커피연구소의 이미지를 형상화한 디자인입니다.
 						</dd>
-						<dd><img src="images/ediyacoffeelab/ediyacoffeelab_logo01.gif" alt="이디야 연구소 로고"></dd>
+						<dd><a href="javascript:;"><img src="images/ediyacoffeelab/ediyacoffeelab_logo01.gif" alt="이디야 연구소 로고"></a></dd>
 					</dl>
 					<dl>
 						<dt class="lab_tit">로고시스템</dt>
-						<dd><img src="images/ediyacoffeelab/ediyacoffeelab_logo02.gif" alt="이디야 연구소 로고시스템"></dd>
+						<dd><a href="javascript:;"><img src="images/ediyacoffeelab/ediyacoffeelab_logo02.gif" alt="이디야 연구소 로고시스템"></a></dd>
 					</dl>
 					<dl>
 						<dt class="lab_tit">패턴</dt>
-						<dd><img src="images/ediyacoffeelab/ediyacoffeelab_logo03.gif" alt="이디야 연구소 패턴"></dd>
+						<dd><a href="javascript:;"><img src="images/ediyacoffeelab/ediyacoffeelab_logo03.gif" alt="이디야 연구소 패턴"></a></dd>
 					</dl>
 					<dl>
 						<dt class="lab_tit">컬러</dt>
-						<dd><img src="images/ediyacoffeelab/ediyacoffeelab_logo04.gif" alt="이디야 연구소 컬러"></dd>
+						<dd><a href="javascript:;"><img src="images/ediyacoffeelab/ediyacoffeelab_logo04.gif" alt="이디야 연구소 컬러"></a></dd>
 					</dl>
 					<dl>
 						<dt class="lab_tit">폰트</dt>
-						<dd><img src="images/ediyacoffeelab/ediyacoffeelab_logo05.gif" alt="이디야 연구소 폰트"></dd>
+						<dd><a href="javascript:;"><img src="images/ediyacoffeelab/ediyacoffeelab_logo05.gif" alt="이디야 연구소 폰트"></a></dd>
 					</dl>
 				</div>
 			</div>
@@ -89,5 +136,17 @@
 <? include "inc/footer.html"; ?>
 	<!-- //푸터 영역 -->
 </div>
+<!-- 이미지 상세 영역 -->
+<div class="detail_img_wrap">
+	<p class="detail_img_bg"></p>
+	<div class="detail_img">
+		<div><img src="images/ediyacoffeelab/ediyacoffeelab_logo01.gif" alt="이디야 연구소 로고" /></div>
+		<div><img src="images/ediyacoffeelab/ediyacoffeelab_logo02.gif" alt="이디야 연구소 로고시스템" /></div>
+		<div><img src="images/ediyacoffeelab/ediyacoffeelab_logo03.gif" alt="이디야 연구소 패턴" /></div>
+		<div><img src="images/ediyacoffeelab/ediyacoffeelab_logo04.gif" alt="이디야 연구소 컬러" /></div>
+		<div><img src="images/ediyacoffeelab/ediyacoffeelab_logo05.gif" alt="이디야 연구소 폰트" /></div>
+	</div>
+</div>
+<!-- //이미지 상세 영역 -->
 </body>
 </html>
