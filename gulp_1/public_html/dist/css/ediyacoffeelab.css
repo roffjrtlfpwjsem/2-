@@ -1,5 +1,6 @@
+#wrap #header_wrap{z-index:9999;}
 #container {
-  padding-bottom: 0; }
+  padding-bottom: 0;}
 
 #visual {
   background: url("../images/ediyacoffeelab/ediyacoffeelab_title_bg.jpg") center 0 no-repeat; }
@@ -48,10 +49,10 @@
       top: 40%;
       left: 135px;
       width: 42%; }
-.lab_logo_wrap{
+.img_wrap{
 	padding:50px 30px;
 }
-.lab_logo_wrap .lab_tit {
+.img_wrap .lab_tit {
   padding-left: 25px;
   color: #333333;
   font-size: 18px;
@@ -60,26 +61,56 @@
   line-height: 30px;
 	text-align:left;
   background: url(../images/common/icon_circle.png) 0 5px no-repeat; }
-.lab_logo_wrap dd{
+.img_wrap dd{
 	text-align:center;
 	margin:15px 0 20px;
 }
-.lab_logo_wrap img{
+.img_wrap img{
 	width:100%;
 	max-width:730px;
 }
-.lab_logo_wrap .lab_logo{
+.img_wrap .lab_logo{
   color: #13245e;
   font-size: 24px;
   font-weight: 900;
 }
-.lab_logo_wrap .lab_logo .lab_logo_txt {
+.img_wrap .lab_logo .lab_logo_txt {
 	color: #333333;
 	font-size: 14px;
 	font-weight: normal; 
 	text-align:left;
 }
-
+/*이미지 상세*/
+.detail_img_wrap{
+	display:none;
+}
+.detail_img_bg{
+	position: absolute;
+	top: 0;
+	bottom:0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: .8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	z-index: 20; 
+}
+.detail_img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:30;
+}
+.detail_img div{
+	display:none;
+	width:100%;
+	text-align:center;
+}
+.detail_img div img{
+	max-height:400px;
+}
+/*//이미지 상세*/
 @media (max-width:1024px){
   .main_visual_wrap h4 {
 		top:18%;
@@ -120,17 +151,17 @@
 		top:25%;
 		left:40%;
 	}
-	.lab_logo_wrap{
+	.img_wrap{
 		padding-left:0;
 		padding-right:0;
 	}
-	.lab_logo_wrap .lab_logo{
+	.img_wrap .lab_logo{
 		font-size:20px;
 	}
-	.lab_logo_wrap .lab_logo .lab_logo_txt {
+	.img_wrap .lab_logo .lab_logo_txt {
 		display:none;
 	}
-	.lab_logo_wrap .lab_tit {
+	.img_wrap .lab_tit {
 		padding-left: 15px;
 		font-size: 16px;
 		background-size:13px;
