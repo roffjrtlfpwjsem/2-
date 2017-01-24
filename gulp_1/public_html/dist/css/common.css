@@ -180,7 +180,6 @@ address, em{font-style: normal;}
 .store_wrap .inp_sch{position: relative;}
 .store_wrap form input[type=text]{width: 100%;}
 .store_wrap form input[type=image]{position:absolute;top:3px; right: 0}
-
 #footer_wrapMb{background-color: #20283F;color: #fff;display: block;}
 #footer_wrapMb a{color: #fff;font-size: 12px;}
 #footer_wrapMb .border_wrap{padding: 15px;border-bottom: 1px solid #3D4A67;text-align: center;}
@@ -202,6 +201,13 @@ address, em{font-style: normal;}
 .news_wrap ul li em{display: none}
 .news_wrap ul li p{display: block;position: absolute;top: 10px;right: 5px;color: #666;font-size: 12px;}
 .news_wrap .news_more{right:15px;}
+.idx_section_1 {background: none ! important;}
+.frameMb {position: relative;}
+.frame_newMenu .bx-pager-link,.frameMb .bx-pager-link {display: block;width: 12px; height: 12px; text-indent: -9999px;background: url(../images/common/btn_visual.png) 0 0 no-repeat}
+.frame_newMenu .bx-pager-link.active,.frameMb .bx-pager-link.active{background: url(../images/common/btn_visual_on.png) 0 0 no-repeat}
+.frame_newMenu .bx-pager-item,.frameMb .bx-pager-item{float: left;margin-left: 5px;}
+.frameMb .bx-pager{position: absolute;bottom:10px;left: 50%; margin-left: -39px;}
+.frame_newMenu .bx-pager{position: absolute;bottom:10px;left: 50%; margin-left: -15px;}
 }
 @media (max-width:766px) {
 .water_spc_wrapaa{margin: 0 auto;}
