@@ -74,7 +74,7 @@ address, em{font-style: normal;}
 .newMenu_wrap ul li{float: left;width:50%;}
 .newMenu_wrap .frame_newMenu ul li img{width: 100%;}
 .newMenu_wrap h3,.store_wrap h3,.mall_wrap h3{margin-bottom: 18px;}
-.newMenu_wrap >p.newMenuBtn,.mall_wrap>p,.open_store>p{position: absolute;top:12px; right: 5px;}
+.newMenu_wrap >p.newMenuBtn,.mall_wrap>p,.open_store>p{position: absolute;top:12px; right: -20px;}
 .newMenu_wrap >p.newMenuBtn>button,.mall_wrap>p>button,.open_store>p>button{background: url("../images/common/btn_idx.png") 0 0 no-repeat;}
 .newMenu_wrap >p.newMenuBtn>button.on,.mall_wrap>p>button.on,.open_store>p>button.on{background: url("../images/common/btn_idx_on.png") 0 0 no-repeat;}
 #idx_section_2 .idx_section_2_in .newMenu_wrap .sliderBannerPage{display: none}
@@ -143,7 +143,10 @@ address, em{font-style: normal;}
 #footer>div p,#footer>div address{font-size: 12px;}
 #footer>p{position: absolute;top: 0;right: 13px;}
 #footer_wrapMb{display: none;}
-
+.frame_newMenu .bx-pager.bx-default-pager{position: absolute;top:21px; right:0;}
+.frame_newMenu .bx-pager-item {float: left;margin-left: 7px;}
+.frame_newMenu .bx-pager-link {display:block;width: 17px; height: 7px; text-indent: -9999px;background: url(../images/common/btn_idx.png) 0 0 no-repeat}
+.frame_newMenu .bx-pager-link.active{background-image: url(../images/common/btn_idx_on.png);}
 @media(max-width:1024px){
 #idx_section_1{background: none !important;position: initial;}
 .visual_wrapMb{width: 500%;}
@@ -207,16 +210,15 @@ address, em{font-style: normal;}
 .frame_newMenu .bx-pager-link.active,.frameMb .bx-pager-link.active{background: url(../images/common/btn_visual_on.png) 0 0 no-repeat}
 .frame_newMenu .bx-pager-item,.frameMb .bx-pager-item{float: left;margin-left: 5px;}
 .frameMb .bx-pager{position: absolute;bottom:10px;left: 50%; margin-left: -39px;}
-.frame_newMenu .bx-pager{position: absolute;bottom:10px;left: 50%; margin-left: -15px;}
+.frame_newMenu .bx-pager.bx-default-pager{position: absolute;bottom:10px;left: 50%; margin-left: -15px;top:auto; right:auto;}
+
 }
 @media (max-width:766px) {
 .water_spc_wrapaa{margin: 0 auto;}
 .water_spc_wrap .water_wrap,.water_spc_wrap .specialy_wrap{width: 100%;}
 .water_spc_wrap{padding: 0 15% 0 32%}
-
 }
 @media (max-width:640px) {
-
 .idx_section_3_in ul li{float: left;text-align: center;margin: 0;position: relative;width: 100%;margin-bottom: 60px;}
 .idx_section_3_in ul li:first-child+li+li,.idx_section_3_in ul li:first-child+li+li+li{width: 100%;}
 .idx_section_3_in ul li:before{content:""; background: url("../images/main/bullet_st3.png") 0 0 no-repeat;width: 32px; height: 3px;position: absolute;top:-20px; left:46%;}

@@ -22,7 +22,7 @@ var init = function(){
 	var maxNumMa = mallBtn.length-1;
 	var activePagingNm = 0;
 	var activePagingMa = 0;
-	var nmenuUl = document.querySelector(".newMenu_wrap ul");
+	// var nmenuUl = document.querySelector(".newMenu_wrap ul");
 	var nMenuWidth = 580;
 	var mallWidth = 552;
 	var showNumNm = 0;
@@ -30,19 +30,16 @@ var init = function(){
 
 	/*이미지슬라이드 스크립트*/
 	var playRolling = function(wrap,action_a,action_b,num){
-		addEvent(wrap, "mouseenter",function(){ //마우스벗어났을때 사진움직이기
+		addEvent(wrap, "mouseenter",function(){ 
 			clearInterval(action_a);
 		})
-		addEvent(wrap, "mouseleave",function(){ //마우스 아웃은 한요소 !! 리브를 해야함
+		addEvent(wrap, "mouseleave",function(){
 			action_a = setInterval(action_b,num)
 		})
 	}
-	//playRolling(storeUl,autoSlideSt,autoClickStore); 요기서부터 하면된다 불러오기 
-	//autoSlideSt = setInterval(autoClickStore,3000);
 	var autoClick = function(a){
 		showNum++;
 		if(showNum > maxNum){showNum = 0;}
-		//console.log(showNum)
 		playSildeBanner(showNum);
 		chPaging(showNum);
 		chBackground(showNum);
@@ -50,21 +47,18 @@ var init = function(){
 	var autoClickStore = function(){
 		showNumSt++;
 		if(showNumSt > maxNumSt){showNumSt = 0;}
-		//console.log(showNumSt)
 		playSildeStore(showNumSt);
 		chStore(showNumSt);
 	}
 	var autoClickNmenu = function(){
 		showNumNm++;
 		if(showNumNm > maxNumNm){showNumNm = 0;}
-		//console.log(showNumNm)
 		playSildeStore(showNumNm);
 		chStore(showNumNm);
 	}
 	var autoClickMall = function(){
 		showNumMa++;
 		if(showNumMa > maxNumMa){showNumMa = 0;}
-		//console.log(showNumMa)
 		playSildeMall(showNumMa);
 		chMall(showNumMa);
 	}
@@ -84,9 +78,9 @@ var init = function(){
 	function playSildeStore(num){
 	    storeUl.style.marginLeft = -num * storeWidth +"px";
 	}
-	function playSildeNmenu(num){
-	    nmenuUl.style.marginLeft = -num * nMenuWidth +"px";
-	}
+	// function playSildeNmenu(num){
+	//     nmenuUl.style.marginLeft = -num * nMenuWidth +"px";
+	// }
 	function playSildeMall(num){
 	    mallUl.style.marginLeft = -num * mallWidth +"px";
 	}
