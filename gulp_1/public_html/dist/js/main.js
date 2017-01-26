@@ -52,8 +52,8 @@ var init = function(){
 	// 	playSildeMall(showNumMa);
 	// 	chMall(showNumMa);
 	// }
-	autoSlide = setInterval(autoClick,5000);
-	playRolling(visualBackground,autoSlide,autoClick,5000);
+	autoSlide = setInterval(autoClick,3000);
+	playRolling(visualBackground,autoSlide,autoClick,3000);
 	autoSlidest = setInterval(autoClickStore,2000);
 	playRolling(storeFrame,autoSlidest,autoClickStore,2000);
 	// autoSlideMa = setInterval(autoClickMall,3000);
