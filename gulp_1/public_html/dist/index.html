@@ -19,6 +19,16 @@ $(function(){
 		        controls:false,
 		        pager:true
 			}); 
+			$('.mall_wrap_in').bxSlider({
+					  minSlides: 2,
+					  maxSlides: 3,
+					  slideWidth: 174,
+					  slideMargin: 10,
+					  auto:false,
+		        autoControls: false,
+		        controls:false,
+		        pager:true
+			});
 })
 </script>
 </head>
@@ -72,14 +82,6 @@ $(function(){
 							<li><a href="#"><img src="images/main/img_newMenu_2.png" alt="신메뉴이미지2"></a></li>
 						</ul>
 					</div>
-				<!-- 	<p class="newMenuBtn">
-						<button class="on"><span>첫번째이미지보기</span></button>
-						<button><span>두번째이미지보기</span></button>
-					</p> -->
-					<!-- <p class="sliderBannerPage">
-						<button class="on"><span>버튼1</span></button>
-						<button><span>버튼2</span></button>
-					</p> -->
 				</div>
 				<div class="store_wrap col_tablet_12">
 					<h3><img src="images/main/title_f_s.png" alt="매장찾기">
@@ -206,97 +208,85 @@ $(function(){
 					<h3><img src="images/main/title_mall.png" alt="이디야몰"></h3>
 					<div class="frame_mall">
 						<ul class="mall_wrap_in">
-							<li>
-								<ul>
-									<li>
-										<a href="http://www.ediyastore.com/shop/goods/goods_view.php?&goodsno=97">
-											<figure>
-												<img src="images/main/img_mall_1.png" alt="핸드드립다크블루">
-													<figcaption><p>핸드드립커피 바이올렛 42g </p><strong>5,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-									<li>
-										<a href="http://www.ediyastore.com/shop/goods/goods_view.php?goodsno=49&category=">
-											<figure>
-												<img src="images/main/img_mall_2.png" alt="다크불루">
-													<figcaption><p>이디야 로스트 200g </p><strong>14,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-									<li>
-										<a href="http://www.ediyastore.com/shop/goods/goods_view.php?goodsno=98&category=">
-											<figure>
-												<img src="images/main/img_mall_3.png" alt="핸드드립다크불루">
-													<figcaption><p>이디야 다크블루 42g </p><strong>5,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li>
-										<a href="#">
-											<figure>
-												<img src="images/main/img_mall_4.png" alt="핸드드립다크불루">
-													<figcaption><p>비니스트 마일드<br/>아메리카노 100개입 기획</p><strong>19,800원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<figure>
-												<img src="images/main/img_mall_5.png" alt="핸드드립다크불루">
-													<figcaption><p>비니스트 오리지널<br/>아메리카노 100개입 기획</p><strong>19,800원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<figure>
-												<img src="images/main/img_mall_6.png" alt="핸드드립다크불루">
-													<figcaption><p>비니스트 오리지널(50개입)</p><strong>10,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<ul>
-									<li>
-										<a href="#">
-											<figure>
-												<img src="images/main/img_mall_7.png" alt="핸드드립다크불루">
-													<figcaption><p>라이트 머그 오렌지</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<figure>
-												<img src="images/main/img_mall_8.png" alt="핸드드립다크불루">
-													<figcaption><p>라이트 머그 블루</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<figure>
-												<img src="images/main/img_mall_9.png" alt="핸드드립다크불루">
-													<figcaption><p>라이트 머그 화이트</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
-											</figure>
-										</a>
-									</li>
-								</ul>
-							</li>
+								<li>
+									<a href="http://www.ediyastore.com/shop/goods/goods_view.php?&goodsno=97">
+										<figure>
+											<img src="images/main/img_mall_1.png" alt="핸드드립다크블루">
+												<figcaption><p>핸드드립커피 바이올렛 42g </p><strong>5,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ediyastore.com/shop/goods/goods_view.php?goodsno=49&category=">
+										<figure>
+											<img src="images/main/img_mall_2.png" alt="다크불루">
+												<figcaption><p>이디야 로스트 200g </p><strong>14,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ediyastore.com/shop/goods/goods_view.php?goodsno=98&category=">
+										<figure>
+											<img src="images/main/img_mall_3.png" alt="핸드드립다크불루">
+												<figcaption><p>이디야 다크블루 42g </p><strong>5,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_4.png" alt="핸드드립다크불루">
+												<figcaption><p>비니스트 마일드<br/>아메리카노 100개입 기획</p><strong>19,800원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_5.png" alt="핸드드립다크불루">
+												<figcaption><p>비니스트 오리지널<br/>아메리카노 100개입 기획</p><strong>19,800원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_6.png" alt="핸드드립다크불루">
+												<figcaption><p>비니스트 오리지널(50개입)</p><strong>10,400원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_7.png" alt="핸드드립다크불루">
+												<figcaption><p>라이트 머그 오렌지</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_8.png" alt="핸드드립다크불루">
+												<figcaption><p>라이트 머그 블루</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<figure>
+											<img src="images/main/img_mall_9.png" alt="핸드드립다크불루">
+												<figcaption><p>라이트 머그 화이트</p><strong>16,000원</strong> <img src="images/main/p_mall.png" alt="포인트마크"> 0원</figcaption>
+										</figure>
+									</a>
+								</li>
 						</ul>
 					</div>
-					<p class="mallBtn">
+					<!-- <p class="mallBtn">
 						<button class="on"><span>첫번째이미지보기</span></button>
 						<button><span>두번째이미지보기</span></button>
 						<button><span>세번째이미지보기</span></button>
-					</p>
+					</p> -->
 				</div>
 				<div class="water_spc_wrap col_tablet_12">
 					<div class="water_wrap col_tablet_6 col_mobile_12">

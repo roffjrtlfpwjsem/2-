@@ -17,15 +17,11 @@ var init = function(){
 	var storeWidth = 239;
 	var activePagingStore = 0;
 	var showNumSt = 0;
-	var newMenuBtn = document.querySelectorAll(".newMenu_wrap .newMenuBtn button");
-	var maxNumNm = newMenuBtn.length-1;
 	var maxNumMa = mallBtn.length-1;
 	var activePagingNm = 0;
 	var activePagingMa = 0;
 	// var nmenuUl = document.querySelector(".newMenu_wrap ul");
-	var nMenuWidth = 580;
 	var mallWidth = 552;
-	var showNumNm = 0;
 	var showNumMa = 0;
 
 	/*이미지슬라이드 스크립트*/
@@ -50,24 +46,18 @@ var init = function(){
 		playSildeStore(showNumSt);
 		chStore(showNumSt);
 	}
-	var autoClickNmenu = function(){
-		showNumNm++;
-		if(showNumNm > maxNumNm){showNumNm = 0;}
-		playSildeStore(showNumNm);
-		chStore(showNumNm);
-	}
-	var autoClickMall = function(){
-		showNumMa++;
-		if(showNumMa > maxNumMa){showNumMa = 0;}
-		playSildeMall(showNumMa);
-		chMall(showNumMa);
-	}
+	// var autoClickMall = function(){
+	// 	showNumMa++;
+	// 	if(showNumMa > maxNumMa){showNumMa = 0;}
+	// 	playSildeMall(showNumMa);
+	// 	chMall(showNumMa);
+	// }
 	autoSlide = setInterval(autoClick,5000);
 	playRolling(visualBackground,autoSlide,autoClick,5000);
 	autoSlidest = setInterval(autoClickStore,2000);
 	playRolling(storeFrame,autoSlidest,autoClickStore,2000);
-	autoSlideMa = setInterval(autoClickMall,3000);
-	playRolling(mallUl,autoSlideMa,autoClickMall,3000);
+	// autoSlideMa = setInterval(autoClickMall,3000);
+	// playRolling(mallUl,autoSlideMa,autoClickMall,3000);
 	function chBackground(num){
 		var a = num+1;
 		visualBackground.style.backgroundImage = "url(images/main/bg_visual_"+a+".png)";
@@ -78,12 +68,9 @@ var init = function(){
 	function playSildeStore(num){
 	    storeUl.style.marginLeft = -num * storeWidth +"px";
 	}
-	// function playSildeNmenu(num){
-	//     nmenuUl.style.marginLeft = -num * nMenuWidth +"px";
+	// function playSildeMall(num){
+	//     mallUl.style.marginLeft = -num * mallWidth +"px";
 	// }
-	function playSildeMall(num){
-	    mallUl.style.marginLeft = -num * mallWidth +"px";
-	}
 	var chPaging = function(num){
 			pageBtn[activePaging].setAttribute("class","");
 			pageBtn[num].setAttribute("class","on");
@@ -94,16 +81,11 @@ var init = function(){
 			storeBtn[num].setAttribute("class","on");
 			activePagingStore = num;
 		}
-	var chNmenu = function(num){
-			newMenuBtn[activePagingNm].setAttribute("class","");
-			newMenuBtn[num].setAttribute("class","on");
-			activePagingNm = num;
-		}
-	var chMall = function(num){
-			mallBtn[activePagingMa].setAttribute("class","");
-			mallBtn[num].setAttribute("class","on");
-			activePagingMa = num;
-		}	
+	// var chMall = function(num){
+	// 		mallBtn[activePagingMa].setAttribute("class","");
+	// 		mallBtn[num].setAttribute("class","on");
+	// 		activePagingMa = num;
+	// 	}	
 	for(var i=0;i<pageBtn.length;i++){ //비쥬얼버튼
 			(function(){
 				var k = i;
@@ -125,26 +107,16 @@ var init = function(){
 				});
 			}());
 		}
-	for(var i=0;i<newMenuBtn.length;i++){
-		(function(){
-			var k = i;
-			addEvent(newMenuBtn[i],"click",function(){
-				chNmenu(k);
-				playSildeNmenu(k);
-				showNumNm = k;
-			});
-		}());
-	}
-	for(var i=0;i<mallBtn.length;i++){
-		(function(){
-			var k = i;
-			addEvent(mallBtn[i],"click",function(){
-				chMall(k);
-				playSildeMall(k);
-				showNumMa = k;
-			});
-		}());
-	}
+	// for(var i=0;i<mallBtn.length;i++){
+	// 	(function(){
+	// 		var k = i;
+	// 		addEvent(mallBtn[i],"click",function(){
+	// 			chMall(k);
+	// 			playSildeMall(k);
+	// 			showNumMa = k;
+	// 		});
+	// 	}());
+	// }
 	/*//이미지슬라이드 스크립트*/
 	}
 	addEvent(window,"load",init)
