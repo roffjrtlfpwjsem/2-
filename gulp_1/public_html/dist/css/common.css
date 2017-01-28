@@ -166,7 +166,7 @@ address, em{font-style: normal;}
 @media(max-width:1024px){
 #idx_section_1{background: none !important;position: initial;}
 .visual_wrapMb{width: 500%;}
-.visual_wrapMb li{width: 20%;max-height: 800px;}
+.visual_wrapMb li{;max-height: 800px;}
 #idx_section_1 .frameMb{position: relative;}
 .visual_wrapMb{position: relative;}
 #wrap #header_wrap{height: 75px;}
