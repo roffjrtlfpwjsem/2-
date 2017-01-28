@@ -5,17 +5,13 @@
 #visual {
   background: url("../images/ediyacoffeelab/ediyacoffeelab_title_bg.jpg") center 0 no-repeat; }
 
-.w1200ma .pl50 {
-  color: #13245e;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 68px 50px 110px; }
-  .w1200ma .pl50 span {
-    display: block;
-    margin-top: 15px;
-    color: #333333;
-    font-size: 18px; }
-      .w1200ma p img{width: 100%;}
+
+
+.cot_wrap .img_wrap img{width: 100%;}
+.img_wrap{margin-bottom: 61px;}
+.main_dscp_wrap{padding: 0 30px;margin-bottom: 92px;}
+.main_dscp_wrap h5{font-weight: 800; font-size: 24px;margin-bottom: 19px;color: #13245e;}
+.main_dscp_wrap span{font-size: 16px; line-height: 26px;}
 
 /*원두*/
 .wd_wrap{  width: 95%;margin: 0 auto;}
@@ -23,7 +19,9 @@
 .wd_wrap div[class^="wd_wrapIn_"] h4,
 .wd_wrap div[class^="wd_wrapIn_"] h4 + p {
   margin-bottom: 12px;
-  padding-left: 12px; }
+  padding-left: 12px; 
+font-size: 16px;
+line-height: 26px;}
 
 .wd_wrap div[class^="wd_wrapIn_"] div[class^="wd_cont_wrap_"] {
   border-left: 1px solid #d6d6d6;
@@ -61,14 +59,14 @@
   background: none !important; }
 
 @media (max-width:640px) {
-.w1200ma p img{display: none;}
-.w1200ma .pl50 {padding: 0 ; margin: 0 auto 26px; width: 95%;}
-.w1200ma .pl50 span{font-size: 14px;}
+.img_wrap{display: none;}
 .col_mobile_12{width: 100% !important;}
 .wd_wrap{font-size: 12px;}
-.wd_wrap div[class^="wd_wrapIn_"] div[class^="wd_cont_wrap_"]{background: none;}
+.wd_wrap div[class^="wd_wrapIn_"] div[class^="wd_cont_wrap_"]{background: none;padding: 15px;}
 .wd_wrap div[class^="wd_wrapIn_"] div[class^="wd_cont_wrap_"] div[class^="wd_"]{margin-bottom: 40px;}
 .m_0{margin: 0 !important;}
+.main_dscp_wrap {display: none;}
+.wd_wrap div[class^="wd_wrapIn_"] h4 + p {display: none;}
 }
 
 
