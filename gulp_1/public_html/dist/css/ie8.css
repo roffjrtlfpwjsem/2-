@@ -1,4 +1,6 @@
-body{min-width: 1200px;}
+body,#header_wrap{min-width: 1200px;}
+#wrap #header_wrap{position: static;}
+#container{padding-top: 0;}
 #contents_wrap {
   min-width: 1200px; }
 
