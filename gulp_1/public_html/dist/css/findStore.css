@@ -1,5 +1,5 @@
 #visual {background: url("../images/ediyacoffee/ediyacoffee_title_bg.jpg") center 0 no-repeat; }
-.map_wrap {width: 100%;text-align: center; padding-bottom: 60px; }
+.map_wrap {width: 800px; margin: 0 auto;text-align: center; padding-bottom: 60px; }
 
 
 .addr_wrap_fs {width: 96%; margin: 0 auto;}
