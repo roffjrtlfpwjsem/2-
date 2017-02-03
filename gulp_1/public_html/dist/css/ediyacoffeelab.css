@@ -99,12 +99,10 @@
 	position:absolute;
 	top:0;
 	left:0;
-	width:100%;
 	z-index:30;
 }
 .detail_img div{
 	display:none;
-	width:100%;
 	text-align:center;
 }
 .detail_img div img{
@@ -130,6 +128,14 @@
 	.lab_list li span {
 		top: 38%;
 		left: 55%;
+	}
+}
+@media (min-width:641px){
+	.detail_img_wrap{
+		display:none !important;
+	}
+	.detail_img div{
+		display:none !important;
 	}
 }
 @media (max-width:640px){

@@ -1,17 +1,18 @@
 <? include "inc/top.html"; ?>
 <title>EDIYA 커피연구소</title>
+<script type="text/javascript" src="js/resize.js"></script>
 <link rel="stylesheet" type="text/css" href="css/ediyacoffeelab.css">
 <script type="text/javascript">
 function init(){
 	var scH = function(){
-		var arrImg = document.querySelectorAll(".img_wrap dd a");
-		var detailBg = document.querySelector(".detail_img_wrap .detail_img_bg");
-		var detailWrap = document.querySelector(".detail_img_wrap");
-		var arrDetail = document.querySelectorAll(".detail_img_wrap .detail_img div");
+		var arrImg = document.querySelectorAll(".mobile .img_wrap dd a");
+		var detailBg = document.querySelector(".mobile .detail_img_wrap .detail_img_bg");
+		var detailWrap = document.querySelector(".mobile .detail_img_wrap");
+		var arrDetail = document.querySelectorAll(".mobile .detail_img_wrap .detail_img div");
 		var scrollHeight = document.body.scrollTop;
 		var windowHeight = document.body.scrollHeight;
 		var windowWidth = document.body.scrollWidth;
-		var detailImg = document.querySelector(".detail_img");
+		var detailImg = document.querySelector(".mobile .detail_img");
 		detailBg.style.height = windowHeight + "px";
 		detailImg.style.top = scrollHeight + 100 + "px";
 		for (var i = 0; i < arrImg.length; i++){
@@ -19,13 +20,14 @@ function init(){
 				var k = i;
 				addEvent(arrImg[i],"click",function(){
 					var menuNum = k;
-					//console.log(menuNum);
 					for (var i = 0; i < arrDetail.length; i++){
 						if (i == menuNum){
+							var imgWidth = 0;
 							detailWrap.style.display = "block";
 							arrDetail[i].style.display = "block";
+							imgWidth = arrDetail[i].clientWidth;
 							if (windowWidth <640){
-								detailBg.style.width = 730 + "px";
+								detailBg.style.width = imgWidth + "px";
 							}
 						}
 					}
