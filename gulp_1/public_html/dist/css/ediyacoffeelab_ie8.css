@@ -1,0 +1,5 @@
+.img_wrap img{
+	width:730px;
+}
+.pc .detail_img_wrap,.tablet .detail_img_wrap,.mobile .detail_img_wrap,.detail_img_wrap{display:none !important;}
+.img_wrap a{outline:none;cursor:normal;}

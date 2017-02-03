@@ -2,6 +2,9 @@
 <title>EDIYA 커피연구소</title>
 <script type="text/javascript" src="js/resize.js"></script>
 <link rel="stylesheet" type="text/css" href="css/ediyacoffeelab.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ediyacoffeelab_ie8.css">
+<![endif]-->
 <script type="text/javascript">
 function init(){
 	var scH = function(){
@@ -9,12 +12,22 @@ function init(){
 		var detailBg = document.querySelector(".mobile .detail_img_wrap .detail_img_bg");
 		var detailWrap = document.querySelector(".mobile .detail_img_wrap");
 		var arrDetail = document.querySelectorAll(".mobile .detail_img_wrap .detail_img div");
-		var scrollHeight = document.body.scrollTop;
+		var scrollHeight;
 		var windowHeight = document.body.scrollHeight;
 		var windowWidth = document.body.scrollWidth;
 		var detailImg = document.querySelector(".mobile .detail_img");
+		var ua = window.navigator.userAgent;
+			if(ua.indexOf('Chrome') != -1)
+			{
+				scrollHeight = document.body.scrollTop;
+				detailImg.style.top = scrollHeight + 100 + "px";
+			}
+			else
+			{
+				scrollHeight = document.documentElement.scrollTop;
+				detailImg.style.top = scrollHeight + 100 + "px";
+			}
 		detailBg.style.height = windowHeight + "px";
-		detailImg.style.top = scrollHeight + 100 + "px";
 		for (var i = 0; i < arrImg.length; i++){
 			(function (){
 				var k = i;
