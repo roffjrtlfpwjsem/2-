@@ -11,7 +11,7 @@
 .addr_wrap_fs .bus_fs dt {background-image: url("../images/findStore/icon_bus.png"); }
 .d{display: none;width: 100%;}
 .d img{max-width: 100%}
-.map_wrap .root_daum_roughmap_landing {margin: 0 auto;}
+.map_wrap .root_daum_roughmap_landing {margin: 0 auto;z-index: 1;}
 @media(max-width:1024px){
 .addr_wrap_fs h4 { padding: 0 0 10px 21px; }
 .addr_wrap_fs dl dt{font-size: 14px;background-position: 0 center;padding: 23px 0 23px 4%;width: 15%;}
